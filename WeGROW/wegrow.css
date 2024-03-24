@@ -129,7 +129,7 @@ transition: 0.3s all ease-in-out;
 body{
 height: 100vh;
 margin: 0;
-background-image: url(C:/Users/Carl/Documents/WebSys/imgs/brooke-lark-08bOYnH_r_E-unsplash.jpg);
+background-image: url(C:/Users/Carl/WebSys/imgs/brooke-lark-08bOYnH_r_E-unsplash.jpg);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
@@ -212,7 +212,7 @@ margin: 200px auto 100px auto;
 .cat{
 display: inline-block;
 padding: 10px 20px;
-background: rgba(255,196,12, 0.8);
+background: #AEC3AE;
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(1.1px);
@@ -236,21 +236,23 @@ margin: auto;
 
 .option {
     text-align: center;
-margin: 30px 40px;
-background: rgba(255, 255, 255, 0.52);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5.1px);
--webkit-backdrop-filter: blur(5.1px);
-width: 300px;
-height: 300px;
-border-radius: 20px;
-overflow: hidden;
+	margin: 30px 40px;
+	background: rgba( 131, 104, 155, 0.25 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 17.5px );
+	-webkit-backdrop-filter: blur( 17.5px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+	width: 300px;
+	height: 300px;
+	border-radius: 20px;
+	overflow: hidden;
 }
 .option p{
 	font-size: 17px;
 	font-weight: bold;
 	display: none;
-	background-color: rgba(255,196,12, 0.5);
+	background-color: #FFEEF4;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	margin: auto;
@@ -265,7 +267,7 @@ overflow: hidden;
     font-size: 25px;
 margin-bottom: 10px;
 padding: 5px;
-background-color: rgba(255,196,12, 0.5);
+background-color: #FFEEF4;
 }
 
 .option img {
@@ -309,7 +311,7 @@ font-family: "century gothic", sans-serif;
     font-size: 35px;
     font-weight: bold;
     margin-bottom: 20px;
-	background: rgba(255,196,12, 0.8);
+	background: #AEC3AE;
 }
 
 #Favorites ul li:hover {
@@ -318,10 +320,12 @@ font-family: "century gothic", sans-serif;
 .pop {
     text-align: center;
 margin: 10px 10px;
-background: rgba(255, 255, 255, 0.52);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5.1px);
--webkit-backdrop-filter: blur(5.1px);
+background: rgba( 131, 104, 155, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 17.5px );
+-webkit-backdrop-filter: blur( 17.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 width: 90%;
 align-items: center;
 border-radius: 20px;
@@ -331,7 +335,7 @@ height: auto;
 }
 
 .pop h1 {
-	background-color: rgba(255,196,12, 0.5);
+	background-color: #FFEEF4;
 	color: black;
 	font-weight: bold;
 	font-size: 14px;
@@ -366,7 +370,7 @@ display: block;
 .pop p{
 	width: 100%;
 	margin-bottom: 20px;
-	background-color: rgba(255,196,12, 0.5);
+	background-color: #FFEEF4;
 	color: black;
 	font-weight: bold;
 	font-size: 17px;
