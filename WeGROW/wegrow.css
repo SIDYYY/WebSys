@@ -129,10 +129,10 @@ transition: 0.3s all ease-in-out;
 body{
 height: 100vh;
 margin: 0;
-background-image: url(C:/Users/Carl/WebSys/imgs/brooke-lark-08bOYnH_r_E-unsplash.jpg);
+background-image: url("C:/Users/Carl/WebSys/imgs/brooke-lark-08bOYnH_r_E-unsplash.jpg");
 background-repeat: no-repeat;
 background-position: center;
-background-size: cover;
+background-size:cover;
 background-attachment: fixed;
 }
 *{
@@ -151,7 +151,7 @@ transform: translateY(25%);
 width: 100vh;
 height: auto;
 padding: 55px 25px;
-margin: 100px auto 50px auto;
+margin: 100px auto 100px auto;
 text-align: center;
 left: 20% ;
 }
@@ -212,12 +212,11 @@ margin: 200px auto 100px auto;
 .cat{
 display: inline-block;
 padding: 10px 20px;
-background: #AEC3AE;
+background: #E4E4D0;
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(1.1px);
 -webkit-backdrop-filter: blur(1.1px);
-border: 1px solid rgba(48, 255, 247, 0.3);
 font-family: 'Georgia', serif;
 margin: auto;
 	
@@ -237,12 +236,7 @@ margin: auto;
 .option {
     text-align: center;
 	margin: 30px 40px;
-	background: rgba( 131, 104, 155, 0.25 );
-	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-	backdrop-filter: blur( 17.5px );
-	-webkit-backdrop-filter: blur( 17.5px );
-	border-radius: 10px;
-	border: 1px solid rgba( 255, 255, 255, 0.18 );
+	background: #ebebdc;
 	width: 300px;
 	height: 300px;
 	border-radius: 20px;
@@ -252,7 +246,7 @@ margin: auto;
 	font-size: 17px;
 	font-weight: bold;
 	display: none;
-	background-color: #FFEEF4;
+	background-color: #AEC3AE;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	margin: auto;
@@ -267,7 +261,7 @@ margin: auto;
     font-size: 25px;
 margin-bottom: 10px;
 padding: 5px;
-background-color: #FFEEF4;
+background-color: #AEC3AE;
 }
 
 .option img {
@@ -311,7 +305,7 @@ font-family: "century gothic", sans-serif;
     font-size: 35px;
     font-weight: bold;
     margin-bottom: 20px;
-	background: #AEC3AE;
+	background: #E4E4D0;
 }
 
 #Favorites ul li:hover {
@@ -320,12 +314,7 @@ font-family: "century gothic", sans-serif;
 .pop {
     text-align: center;
 margin: 10px 10px;
-background: rgba( 131, 104, 155, 0.25 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 17.5px );
--webkit-backdrop-filter: blur( 17.5px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+background: #ebebdc;
 width: 90%;
 align-items: center;
 border-radius: 20px;
@@ -335,7 +324,7 @@ height: auto;
 }
 
 .pop h1 {
-	background-color: #FFEEF4;
+	background-color: #AEC3AE;
 	color: black;
 	font-weight: bold;
 	font-size: 14px;
@@ -370,7 +359,7 @@ display: block;
 .pop p{
 	width: 100%;
 	margin-bottom: 20px;
-	background-color: #FFEEF4;
+	background-color: #AEC3AE;
 	color: black;
 	font-weight: bold;
 	font-size: 17px;
