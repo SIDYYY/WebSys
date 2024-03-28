@@ -173,6 +173,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 color: black;
 font-family: 'Georgia', serif;
 }
+
 .Message{
 margin: 50px 50px;
 font-weight: bold;
@@ -182,17 +183,24 @@ height: auto;
 color: black;
 text-align: center;
 }
+
 .mobile{
 display: none;
 }
+
 #Category {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: auto;
     width: 1000px;
-padding: 40px 25px;
-margin: 200px auto 100px auto;
+	padding: 40px 25px;
+	margin: 200px auto 100px auto;
+}
+
+#Category a{
+	color: black;
+	text-decoration: none;
 }
 
 #Category ul {
@@ -252,16 +260,16 @@ margin: auto;
 	margin: auto;
 	margin-top: 10px;
 }
+
 .option:hover p{
 	display: block;
 }
 
-
 .option h1 {
     font-size: 25px;
-margin-bottom: 10px;
-padding: 5px;
-background-color: #AEC3AE;
+	margin-bottom: 10px;
+	padding: 5px;
+	background-color: #AEC3AE;
 }
 
 .option img {
@@ -274,9 +282,8 @@ background-color: #AEC3AE;
 }
 
 .option h1, .pop h1, #About p{
-font-family: "century gothic", sans-serif;
+	font-family: "century gothic", sans-serif;
 }
-
 
 #Favorites {
     display: flex;
@@ -399,22 +406,21 @@ margin: 10px auto 100px auto;
 
 .food_cat{
 display: inline-block;
-padding: 10px 20px;
+padding: 10px 15px;
 background: #E4E4D0;
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(1.1px);
 -webkit-backdrop-filter: blur(1.1px);
 font-family: 'Georgia', serif;
-margin: auto;
-	
+margin-right: 70%;
+
 }
 
 #Food_Category h2 {
     font-size: 30px;
     font-weight: bold;
-    margin-bottom: 20px;
-	
+    margin-bottom: 10%;
 }
 
 #Food_Category ul li:hover {
