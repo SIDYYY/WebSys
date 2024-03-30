@@ -6,6 +6,10 @@
 html{
     scroll-behavior: smooth;
 }
+.background-hidden {
+    background: none;
+    /* Additional styles to adjust header appearance when background is hidden */
+}
 header {
     background: rgba( 255, 255, 255, 0.2 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -30,7 +34,7 @@ header nav{
  header h2{
     background: rgb(185,185,185);
     background: linear-gradient(90deg, rgba(185,185,185,1) 0%, rgba(175,176,172,1) 33%, rgba(170,170,170,1) 66%, rgba(162,162,162,1) 96%);
-    border: 2px solid rgb(79, 79, 79);
+    border: 0px solid rgb(79, 79, 79);
 }
 .menu {
     list-style: none;
@@ -200,7 +204,6 @@ header nav{
     background-attachment: fixed;
     padding: 20px;
     text-align: center;
-    margin-top: 200px;
     height: 100vh;
 }
 
@@ -277,4 +280,49 @@ header nav{
 
 .social-icons .instagram:hover {
     color: #C13584; /* Change color on hover for Instagram */
+}
+.team {
+    text-align: center; /* Center the team section */
+    background: rgb(185,185,185);
+    background: linear-gradient(90deg, rgba(185,185,185,1) 0%, rgba(175,176,172,1) 33%, rgba(170,170,170,1) 66%, rgba(162,162,162,1) 96%);
+    padding-bottom: 50px;
+}
+.team h3{
+    padding-top: 50px;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.team-members {
+    display: flex; /* Use flexbox for inline layout */
+    justify-content: center; /* Center the team members horizontally */
+    gap: 50px; /* Add spacing between team members */
+    margin-top: 50px;
+}
+
+.team-member {
+    text-align: center; /* Center the content inside each team member */
+    max-width: 200px; /* Set maximum width for each team member */
+}
+
+.team-member img {
+    width: 100%; /* Ensure images take up full width of their container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Set maximum height for images */
+    border-radius: 50%; /* Optional: Rounded corners for circular images */
+}
+
+.team-member h4 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.team-member p {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

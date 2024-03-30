@@ -30,6 +30,7 @@ window.addEventListener('scroll', function() {
     var footerOffset = footer.offsetTop;
     var scrollPosition = window.scrollY;
 
+    // Check if the scroll position is at or below the footer
     if (scrollPosition + window.innerHeight >= footerOffset) {
         header.style.display = 'none'; // Hide the header when footer is reached
     } else {
