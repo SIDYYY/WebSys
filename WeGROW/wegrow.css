@@ -227,6 +227,8 @@ header nav{
 
 .contact-form label {
     margin-bottom: 5px;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 .contact-form input[type="text"],
@@ -297,7 +299,7 @@ header nav{
 .team-members {
     display: flex; /* Use flexbox for inline layout */
     justify-content: center; /* Center the team members horizontally */
-    gap: 50px; /* Add spacing between team members */
+    gap: 100px; /* Add spacing between team members */
     margin-top: 50px;
 }
 
