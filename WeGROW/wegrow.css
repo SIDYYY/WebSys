@@ -111,8 +111,9 @@ header nav{
     cursor: pointer;
 }
 .about button a{
-    color:#000000;
+    color:#000002;
     text-decoration: none;
+
 }
 .footer{
     position: relative;
