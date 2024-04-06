@@ -11,12 +11,8 @@ html{
     /* Additional styles to adjust header appearance when background is hidden */
 }
 header {
-    background: rgba( 255, 255, 255, 0.2 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 1.5px );
-    -webkit-backdrop-filter: blur( 1.5px );
-    border: 0px solid rgba( 255, 255, 255, 0.18 );
-    padding: 30px;
+    padding: 15px;
+    background-color: #FBF3D5;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,43 +22,53 @@ header {
     position: fixed;
     z-index: 1000;
     transition: transform 0.5s ease;
+
+
 }
-header nav{
+header nav {
     display: flex;
-    padding: 3px;
+    justify-content: space-between; /* Align items to the start and end of the container */
+    align-items: center; /* Vertically center the items */
+    padding: 10px; /* Add some padding for spacing */
 }
- header h2{
-    background: rgb(185,185,185);
-    background: linear-gradient(90deg, rgba(185,185,185,1) 0%, rgba(175,176,172,1) 33%, rgba(170,170,170,1) 66%, rgba(162,162,162,1) 96%);
-    border: 0px solid rgb(79, 79, 79);
+
+header h2 {
+    margin: 0; /* Remove default margin */
+    padding: 0 20px; /* Add padding to the heading */
+    font-size: 24px; /* Adjust font size */
 }
+
 .menu {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
     display: flex;
-    justify-content: flex-end; /* Center the items horizontally */
-    
-
+    align-items: center; /* Vertically center the items */
 }
 
 .menu li {
-    margin-left: 100px; /* Adjust spacing between menu items */
-    justify-content: center; /* Center the items horizontally */
-    right: 0;
-}   
-.menu li:first-child{
-    margin-left: 340px;
+    margin-left: 20px; /* Adjust spacing between menu items */
 }
+
+.menu li:first-child {
+    margin-right: auto; /* Push the first menu item to the left */
+}
+.menu li:last-child {
+    margin-right: 20px; /* Add margin to the right of the last menu item */
+}
+
 .menu li a {
     text-decoration: none;
-    color: #000000; /* Example link color */
-    margin: auto;
-    justify-content: center; /* Center the items horizontally */
-    right: 0%;
-    font-weight: bolder;
-    font-size: 15px;
+    color: #000; /* Adjust link color */
+    padding: 10px 15px; /* Adjust padding for better click area */
+    border-radius: 10px; /* Add border radius */
 }
+
+.menu li:hover a {
+    background-color: #dbd5a9;
+    color: rgb(135, 205, 135);
+}
+
 #main-content {
     display: flex; /* Use flexbox */
     justify-content: center; /* Center the content horizontally */
@@ -73,6 +79,7 @@ header nav{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    
 }
 .about{
     background: rgba( 255, 255, 255, 0.3 );
@@ -121,12 +128,13 @@ header nav{
 }
 .footer{
     position: relative;
-    height: 20vh; 
+    height: 20vh;
+    margin-top: 100px;
 }
 
 .footer #quote{
     position: absolute;
-    margin: 145px auto;
+    margin:0;
     width: 100%; 
     font-size: 30px;
     font-style: italic;
@@ -136,7 +144,6 @@ header nav{
 }
 .cat {
     text-align: center;
-    margin-top: 200px;
     height: 110vh;
     background-image: url("C:/Users/Carl/WebSys/imgs/photo-1592178036823-ccb0e0e67562.avif");
     background-position: center;
@@ -164,7 +171,7 @@ header nav{
 }
 .option h3 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .option img {
@@ -284,9 +291,12 @@ header nav{
     color: #C13584; /* Change color on hover for Instagram */
 }
 .team {
+    background-image: url("C:/Users/Carl/WebSys/imgs/josh-calabrese-XXpbdU_31Sg-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     text-align: center; /* Center the team section */
-    background: rgb(185,185,185);
-    background: linear-gradient(90deg, rgba(185,185,185,1) 0%, rgba(175,176,172,1) 33%, rgba(170,170,170,1) 66%, rgba(162,162,162,1) 96%);
     padding-bottom: 50px;
 }
 .team h3{

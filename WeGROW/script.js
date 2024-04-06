@@ -24,16 +24,20 @@ displayNextQuote();
 setInterval(displayNextQuote, 3000);
 
 window.addEventListener('scroll', function() {
+    var mainContent = document.getElementById('main-content');
     var footer = document.querySelector('footer');
     var header = document.querySelector('header');
     var headerHeight = header.offsetHeight;
+    var mainContentHeight = mainContent.offsetHeight;
     var footerOffset = footer.offsetTop;
     var scrollPosition = window.scrollY;
 
-    // Check if the scroll position is at or below the footer
-    if (scrollPosition + window.innerHeight >= footerOffset) {
-        header.style.display = 'none'; // Hide the header when footer is reached
+    // Check if the scroll position is within the main-content or footer
+    if ((scrollPosition >= mainContent.offsetTop && 
+        scrollPosition <= mainContent.offsetTop + mainContentHeight) ||
+        scrollPosition + window.innerHeight >= footerOffset) {
+        header.style.display = 'none'; // Hide the header when within main-content or footer
     } else {
-        header.style.display = 'block'; // Show the header when not at the footer
+        header.style.display = 'block'; // Show the header when not within main-content or footer
     }
 });
