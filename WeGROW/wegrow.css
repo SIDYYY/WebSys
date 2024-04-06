@@ -68,7 +68,7 @@ header nav{
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the content vertically */
     height: 100vh;
-    background-image: url("C:/Users/Carl/WebSys/imgs/brooke-lark-08bOYnH_r_E-unsplash.jpg");
+    background-image: url("imgs/brooke-lark-08bOYnH_r_E-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -138,7 +138,7 @@ header nav{
     text-align: center;
     margin-top: 200px;
     height: 110vh;
-    background-image: url("C:/Users/Carl/WebSys/imgs/photo-1592178036823-ccb0e0e67562.avif");
+    background-image: url("imgs/photo-1592178036823-ccb0e0e67562.avif");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -197,7 +197,7 @@ header nav{
 }
 
 #contacts {
-    background-image: url("C:/Users/Carl/WebSys/imgs/andrej-lisakov-3A4XZUopCJA-unsplash.jpg");
+    background-image: url("imgs/andrej-lisakov-3A4XZUopCJA-unsplash.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
