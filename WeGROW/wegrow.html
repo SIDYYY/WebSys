@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeGrow - HealthyPreps</title>
-    <link rel="stylesheet" type="text/css" href="C:\Users\Carl\WebSys\WeGROW\wegrow.css">
+    <link rel="stylesheet" type="text/css" href="wegrow.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
 
 
 </head>
 <body class="top-page">
     <header>
 		<nav>
-			<h2>WE - GROW</h2>
+            <h2 class="section__subheader">WE GROW <span><i class="ri-leaf-fill"></i></span></h2>
 			<ul class="menu">
 				<li><a href="#main-content">Home</a></li>
 				<li><a href="#categ">Recipes</a></li>
-				<li><a href="#main-content">About Us</a></li>
+				<li><a href="#about">About Us</a></li>
 				<li><a href="#contacts">Contact</a></li>
 			</ul>
 		</nav>
@@ -25,21 +25,51 @@
     
     <main id="main-content">
         
-		<div class="about">
+		<div class="intro">
 			<h2> Welcome to We-GROW <sup> 2024 </sup></h2>
-			<p> where healthy eating meets delicious recipes! 
-				Are you ready to embark on a culinary journey 
-				filled with nutritious and mouthwatering dishes? 
-				Whether you're looking to whip up a quick weekday 
-				meal or impress your guests with gourmet creations, 
-				our collection of recipes has you covered. 
-				Get ready to explore a world of flavors, ingredients, 
-				and cooking techniques that will inspire and delight your taste buds.
-				 Let's dive in and discover the joys of cooking wholesome meals together!</p>
+			<p>Your gateway to healthy recipes! Join us on a journey 
+				filled with nutritious and mouthwatering dishes. Let's 
+				explore a world of flavors, ingredients, and cooking techniques
+				 that will inspire and delight your taste buds.
 
-			<button ><a href="#categ"> Get Inspired to Cook </a></button>	 
+			</p>
+
+			<button ><a href="#categ"> Enter Culinary World	</a></button>	 
 		</div>
     </main>
+	<section></section>
+	<div id="about">
+		<div class="aboutus">
+			<img src="C:\Users\Carl\WebSys\WeGROW\imgs\Black and Yellow Flat Resort Logo.png" alt="wegrowlogo">
+			<div class="content">
+			<h2>About US</h2>
+			<p>Welcome to We GROW, your hub for delicious, nutritious 
+			recipes and holistic wellness inspiration! We're passionate 
+			about making healthy eating a joyous experience for everyone. 
+			Join our community and discover the power of wholesome food to 
+			nourish your body and soul</p>
+			</div>
+		</div>
+		<div class="missionvision">
+			<div class="content">
+			<h2> MISSION </h2>
+			<p>At We GROW, we're on a mission to empower individuals to 
+			embrace wellness through nourishing food and mindful living.
+			 We curate recipes and resources that inspire healthy choices 
+			 and foster a sense of community.
+			</p>
+			</div>
+			<div class="content">
+			<h2>VISION</h2>
+			<P> Our vision at We GROW is to be a catalyst 
+				for global wellness, promoting sustainable living 
+				and nourishing lifestyles. We envision a world where 
+				everyone has access to nutritious food and the tools to 
+				thrive, creating a happier, healthier future for generations to come</P>
+			</div>
+		</div>
+
+	</div>
     
     <div class="footer">
         <div id="quote"> 
@@ -49,36 +79,42 @@
 	
 		<section class="cat">
 			<h2 id="categ"> CATEGORY </h2>
-
-			<div class="option">
-				<h3> FOOD </h3>
-				<img src="C:\Users\Carl\WebSys\imgs\istockphoto-1316145932-612x612.jpg" alt="FOOD">
-				<div class="calories">Calorie Ranges: 300-700</div>
-			</div>
-			<div class="option">
-				<h3> DESSERT </h3>
-				<img src="C:\Users\Carl\WebSys\imgs\1382542461780.jpeg" alt="DESSERT">
-				<div class="calories">Calorie Ranges: 300-700</div>
-			</div>
-			<div class="option">
-				<h3> DRINKS </h3>
-				<img src="C:\Users\Carl\WebSys\imgs\healthy-drinks-for-kids.jpg" alt="DRINK">
-				<div class="calories">Calorie Ranges: 300-700</div>
-			</div>
+			<nav>
+				<div class="option">
+					<a href="food_category.html"><h3> FOOD </h3>
+					<img src="imgs\istockphoto-1316145932-612x612.jpg" alt="FOOD">
+					<div class="calories">Calorie Ranges: 300-700</div>
+				</a>
+				</div>
+				<div class="option">
+					<a href="dessert.html">
+					<h3> DESSERT </h3>
+					<img src="imgs\1382542461780.jpeg" alt="DESSERT">
+					<div class="calories">Calorie Ranges: 300-700</div>
+				</a>
+				</div>
+				<div class="option">
+					<a href="others.html">
+					<h3> DRINKS </h3>
+					<img src="imgs\healthy-drinks-for-kids.jpg" alt="DRINK">
+					<div class="calories">Calorie Ranges: 300-700</div>
+				</a>
+				</div>
+			</nav>
 		</section>
 
 		<section class="team">
 			<h3>Our Team</h3>
 		<div class="team-members">
 			<div class="team-member">
-				<img src="C:\Users\Carl\WebSys\imgs\b9c47ef70bff06613d397abfce02c6e7.jpg" alt="Ana Marie">
+				<img src="imgs\b9c47ef70bff06613d397abfce02c6e7.jpg" alt="Ana Marie">
 				<h4>Ana Marie Bombeo</h4>
-				<p>Role: Designer</p>
+				<p>Role: Lead Designer</p>
 			</div>
 			<div class="team-member">
-				<img src="C:\Users\Carl\WebSys\imgs\download (2).jpeg" alt="Carl Patrick">
+				<img src="imgs\download (2).jpeg" alt="Carl Patrick">
 				<h4>Carl Patrick Daguinotas	</h4>
-				<p>Role: Designer</p>
+				<p>Role: Lead Designer</p>
 			</div>
 		</div>
 		</section>
