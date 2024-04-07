@@ -8,7 +8,6 @@ html{
 }
 .background-hidden {
     background: none;
-    /* Additional styles to adjust header appearance when background is hidden */
 }
 header {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -59,9 +58,9 @@ header h2 {
 
 .menu li a {
     text-decoration: none;
-    color: #000; /* Adjust link color */
-    padding: 10px 15px; /* Adjust padding for better click area */
-    border-radius: 10px; /* Add border radius */
+    color: #000; 
+    padding: 10px 15px; 
+    border-radius: 10px;
 }
 
 .menu li:hover a {
@@ -79,10 +78,10 @@ header h2 {
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the content vertically */
     height: 100vh;
-    background-image: url("imgs/brooke-lark-08bOYnH_r_E-unsplash.jpg");
+    background-image: url("C:/Users/Carl/WebSys/WeGROW/imgs/photo-1543353071-10c8ba85a904.avif");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position:bottom;
     background-attachment: fixed;
     
 }
@@ -106,13 +105,16 @@ header h2 {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 .intro h2{
-    color: #4CAF50;
-    padding-bottom: 20px;
     font-size: 40px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    border-bottom: 4px solid #44891c;
 }
 .intro sup{
     font-size: 10px;
+    color: black;
 }
 .intro button{
     margin-top: 30px;
@@ -120,7 +122,7 @@ header h2 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     height: auto;
-    padding: 20px;
+    padding: 18px;
     background: #44891c;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 2px );
@@ -141,7 +143,7 @@ header h2 {
     margin-top: 1px;
     padding-top: 8%;
     height: 100vh;
-    background-image: url("C:/Users/Carl/WebSys/WeGROW/imgs/photo-1467740100611-36858db27485.avif");
+    background-image: url("C:/Users/Carl/WebSys/WeGROW/imgs/photo-1498522271744-cdd435c13f24.avif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -234,8 +236,8 @@ header h2 {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     text-align: center;
     height: 110vh;
-    background-image: url("imgs/photo-1592178036823-ccb0e0e67562.avif");
-    background-position: bottom;
+    background-image: url("imgs/photo-1495195129352-aeb325a55b65.avif");
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -253,9 +255,11 @@ header h2 {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .cat h2{
-    color: #1d8c1d;
+    border-radius: 10px;
+    border-bottom: 5px solid #1d8c1d;
+    display: inline-block;
     padding-top: 10%;
-    font-size: 65px;
+    font-size: 55px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .option a{
