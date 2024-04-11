@@ -267,18 +267,16 @@ header h2 {
     color: #000;
 }
 .option h3 {
+    margin-top: 10px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 25px;
 }
 
 .option img {
-    width: 300px; 
-    height: auto; 
+    width: 270px; 
+    height: auto;
+    aspect-ratio: 1/1;
     margin-top: 10px; 
-}
-.option:nth-of-type(2) img {
-    width: 300px;
-    height: 27.5vh; 
 }
 .calories {
     display: block;
