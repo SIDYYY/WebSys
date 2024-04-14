@@ -25,19 +25,15 @@ setInterval(displayNextQuote, 3000);
 
 window.addEventListener('scroll', function() {
     var mainContent = document.getElementById('main-content');
-    var footer = document.querySelector('footer');
-    var header = document.querySelector('header');
-    var headerHeight = header.offsetHeight;
-    var mainContentHeight = mainContent.offsetHeight;
-    var footerOffset = footer.offsetTop;
+    var contacts = document.getElementById('contacts');
+    var header = document.querySelector('.menu-container');
     var scrollPosition = window.scrollY;
 
-    // Check if the scroll position is within the main-content or footer
-    if ((scrollPosition >= mainContent.offsetTop && 
-        scrollPosition <= mainContent.offsetTop + mainContentHeight) ||
-        scrollPosition + window.innerHeight >= footerOffset) {
-        header.style.display = 'none'; // Hide the header when within main-content or footer
+    // Check if the scroll position is within main-content or contacts
+    if (scrollPosition >= mainContent.offsetTop && 
+        scrollPosition > contacts.offsetTop + contacts.offsetHeight) {
+        header.style.display = 'none'; // Hide the header when scrolled to main-content or contacts
     } else {
-        header.style.display = 'block'; // Show the header when not within main-content or footer
+        header.style.display = 'flex'; // Show the header otherwise
     }
 });

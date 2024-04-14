@@ -11,17 +11,31 @@
 
 </head>
 <body class="top-page">
-    <header>
-		<nav>
-            <h2 class="section__subheader">WE GROW <span><i class="ri-leaf-fill"></i></span></h2>
-			<ul class="menu">
-				<li><a href="#main-content">Home</a></li>
-				<li><a href="#categ">Recipes</a></li>
-				<li><a href="#about">About Us</a></li>
-				<li><a href="#contacts">Contact</a></li>
-			</ul>
-		</nav>
-    </header>
+	<nav class="menu-container">
+		<!-- burger menu -->
+		<input type="checkbox" aria-label="Toggle menu" />
+		<span></span>
+		<span></span>
+		<span></span>
+	  
+		<!-- logo -->
+		<a href="#main-content" class="menu-logo">
+		  <p> We GROW </p>
+		</a>
+	  
+		<!-- menu items -->
+		<div class="menu">
+		  <ul>
+			<li><a href="#main-content">Home</a></li>
+			<li><a href="#about">About US</a></li>
+			<li><a href="#categ">Category</a></li>
+			<li><a href="#contacts">Contact</a></li>
+		  </ul>
+		  <ul>
+		  </ul>
+		</div>
+	  </nav>
+
     
     <main id="main-content">
         
@@ -39,10 +53,9 @@
     </main>
 	<section></section>
 	<div id="about">
+		<h2 class="abt-head">About US</h2>
 		<div class="aboutus">
-			<img src="C:\Users\Carl\WebSys\WeGROW\imgs\Black and Yellow Flat Resort Logo.png" alt="wegrowlogo">
 			<div class="content">
-			<h2>About US</h2>
 			<p>Welcome to We GROW, your hub for delicious, nutritious 
 			recipes and holistic wellness inspiration! We're passionate 
 			about making healthy eating a joyous experience for everyone. 
@@ -68,8 +81,22 @@
 				thrive, creating a happier, healthier future for generations to come</P>
 			</div>
 		</div>
-
 	</div>
+	<section class="team">
+		<h3>Our Team</h3>
+	<div class="team-members">
+		<div class="team-member">
+			<img src="imgs\b9c47ef70bff06613d397abfce02c6e7.jpg" alt="Ana Marie">
+			<h4>Ana Marie Bombeo</h4>
+			<p>Role: Lead Designer</p>
+		</div>
+		<div class="team-member">
+			<img src="imgs\download (2).jpeg" alt="Carl Patrick">
+			<h4>Carl Patrick Daguinotas	</h4>
+			<p>Role: Lead Designer</p>
+		</div>
+	</div>
+	</section>
     
     <div class="footer">
         <div id="quote"> 
@@ -77,48 +104,60 @@
 		</div>
 		</div>
 	
-		<section class="cat">
-			<h2 id="categ"> CATEGORY </h2>
-			<nav>
-				<div class="optcontainer">
+		<section id="categ">
+			<h2 class="cat"> CATEGORIES </h2>
+			<div class="optcontainer">
 				<div class="option">
-					<a href="food_category.html"><h3> FOOD </h3>
-					<img src="imgs\istockphoto-1316145932-612x612.jpg" alt="FOOD">
-					<div class="calories">Calorie Ranges: 300-700</div>
-				</a>
+					<h3>FOOD</h3>
+					<div class="dish-container">
+						<div class="dish">
+							<img src="C:\Users\Carl\WebSys\WeGROW\food\1.jpeg" alt="Food">
+						</div>
+						<div class="dish" id="food2">
+							<img src="C:\Users\Carl\WebSys\WeGROW\food\2crop.png" alt="Food">
+						</div>
+						<div class="dish" id="food3">
+							<img src="C:\Users\Carl\WebSys\WeGROW\food\3crop.png" alt="Food">
+						</div>
+					</div>
+					<p class="calories">Calorie Ranges: 300-400</p>
+					<a href="food_category.html" class="more-btn">MORE RECIPES</a>
 				</div>
+		
 				<div class="option">
-					<a href="dessert.html">
-					<h3> DESSERT </h3>
-					<img src="imgs\1382542461780.jpeg" alt="DESSERT">
-					<div class="calories">Calorie Ranges: 300-700</div>
-				</a>
+					<h3>DESSERT</h3>
+					<div class="dish-container">
+						<div class="dish">
+							<img src="C:\Users\Carl\WebSys\WeGROW\food\1.jpeg" alt="Dessert">
+						</div>
+						<div class="dish" id="des2">
+							<img src="C:\Users\Carl\WebSys\WeGROW\food\2crop.png" alt="Dessert">
+						</div>
+						<div class="dish" id="des3">
+							<img src="C:\Users\Carl\WebSys\WeGROW\food\3crop.png" alt="Dessert">
+						</div>
+					</div>
+					<p class="calories">Calorie Ranges: 300-400</p>
+					<a href="dessert.html" class="more-btn">MORE RECIPES</a>
 				</div>
+		
 				<div class="option">
-					<a href="others.html">
-					<h3> DRINKS </h3>
-					<img src="imgs\healthy-drinks-for-kids.jpg" alt="DRINK">
-					<div class="calories">Calorie Ranges: 300-700</div>
-				</a>
+					<h3>DRINKS</h3>
+					<div class="dish-container">
+						<div class="dish">
+							<img src="C:\Users\Carl\WebSys\WeGROW\food\1.jpeg" alt="Others">
+						</div>
+						<div class="dish" id="dr2">
+							<img src="C:\Users\Carl\WebSys\WeGROW\food\2crop.png" alt="Others">
+						</div>
+						<div class="dish" id="dr3">
+							<img src="C:\Users\Carl\WebSys\WeGROW\food\3crop.png" alt="Others">
+						</div>
+					</div>
+					<p class="calories">Calorie Ranges: 300-400</p>
+					<a href="drinks.html" class="more-btn">MORE RECIPES</a>
 				</div>
-				</div>
-			</nav>
-		</section>
-
-		<section class="team">
-			<h3>Our Team</h3>
-		<div class="team-members">
-			<div class="team-member">
-				<img src="imgs\b9c47ef70bff06613d397abfce02c6e7.jpg" alt="Ana Marie">
-				<h4>Ana Marie Bombeo</h4>
-				<p>Role: Lead Designer</p>
 			</div>
-			<div class="team-member">
-				<img src="imgs\download (2).jpeg" alt="Carl Patrick">
-				<h4>Carl Patrick Daguinotas	</h4>
-				<p>Role: Lead Designer</p>
-			</div>
-		</div>
 		</section>
 		
 			<footer id="contacts">

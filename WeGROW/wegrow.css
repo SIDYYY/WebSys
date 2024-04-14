@@ -6,72 +6,121 @@
 html{
     scroll-behavior: smooth;
 }
-.background-hidden {
-    background: none;
-}
-header {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 15px;
-    background-color: #FBF3D5;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
+body {
+    overflow-x: hidden;
+    font-family: Sans-Serif;
+    margin: 0;
+  }
+  
+  .menu-container {
+    position: fixed; /* Change to fixed position */
+    top: 0;
+    left: 0;
     width: 100%;
-    height: fit-content;
-    position: fixed;
-    z-index: 1000;
-    transition: transform 0.5s ease;
-
-}
-header nav {
     display: flex;
-    justify-content: space-between; /* Align items to the start and end of the container */
-    align-items: center; /* Vertically center the items */
-    padding: 10px; /* Add some padding for spacing */
+    align-items: center;
+    background: #f9f5c3;
+    color: #000000;
+    padding: 15px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+  }
+  .menu{
+    right: 0;
+  }
+  .menu-logo {
+    line-height: 0;
+    margin: 0 20px;
+    width: 56%;
 }
 
-header h2 {
-    margin: 0; /* Remove default margin */
-    padding: 0 20px; /* Add padding to the heading */
-    font-size: 24px; /* Adjust font size */
-}
+  .menu-logo p {
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        display: inline-block;
+        background: #1d8c1d;
+        padding: 18px;
+        border-radius: 5px;
+        box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.5); /* Bottom box shadow */
+    
+    }
 
-.menu {
-    list-style: none;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    display: flex;
-    align-items: center; /* Vertically center the items */
-}
-
-.menu li {
-    margin-left: 20px; /* Adjust spacing between menu items */
-}
-
-.menu li:first-child {
-    margin-right: auto; /* Push the first menu item to the left */
-}
-.menu li:last-child {
-    margin-right: 20px; /* Add margin to the right of the last menu item */
-}
-
-.menu li a {
+  
+  .menu-container a {
     text-decoration: none;
-    color: #000; 
-    padding: 10px 15px; 
-    border-radius: 10px;
+    color: #f9f5c3;
+    transition: color 0.3s ease;
+  }
+  
+  .menu-container a:not(.menu-logo):hover {
+    color: #7ed321;
+    border-bottom: 2px solid #1d8c1d;
 }
-
-.menu li:hover a {
-    opacity: 0.7;
-    color: green;
-    text-decoration: underline;
-}
-.menu li:active{
-    color: green;
-    text-decoration: underline;
-}
+  
+  .menu-container input {
+    display: block;
+    width: 35px;
+    height: 25px;
+    margin: 0;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+  }
+  
+  /* Burger menu */
+  .menu-container span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #000000;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+  
+  .menu-container span:first-child {
+    transform-origin: 0% 0%;
+  }
+  
+  .menu-container span:nth-child(3) {
+    transform-origin: 0% 100%;
+  }
+  
+  .menu-container input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(3px,-1px);
+    background: #000000;
+  }
+  
+  .menu-container input:checked ~ span:nth-child(4) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  .menu-container input:checked ~ span:nth-child(3) {
+    transform: rotate(-45deg) translate(-5px,11px);
+  }
+  
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 10px 0px;
+    font-size: 15px;
+  }
 
 #main-content {
     display: flex; /* Use flexbox */
@@ -92,7 +141,7 @@ header h2 {
     -webkit-backdrop-filter: blur( 2px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    padding: 50px 20px 50px 20px;
+    padding: 50px 10px 50px 10px;
     width: 50%;
     height: auto;
     text-align: center;
@@ -143,23 +192,34 @@ header h2 {
     margin-top: 1px;
     padding-top: 8%;
     height: 100vh;
-    background-image: url("C:/Users/Carl/WebSys/WeGROW/imgs/photo-1498522271744-cdd435c13f24.avif");
+    background-image: url("imgs/photo-1495195129352-aeb325a55b65.avif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
+    text-align: center;
 }
 .aboutus{
     display: flex;
     width: 60%;
-    padding: 20px;
     margin: auto;
-    background: rgba( 255, 255, 255, 0.4 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.aboutus .content{
+    padding-left: 20px;
+}
+.missionvision .content{
+    text-align: left;
+}
+.abt-head{
+    margin: auto;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#1d8c1d;
+    border-bottom: 5px solid #888;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
 }
 .aboutus img{
     width: 25%;
@@ -167,7 +227,8 @@ header h2 {
     border-radius: 100px;
     display: flex;
 }
-.aboutus h2, p{
+.aboutus h2, 
+.aboutus p{
     padding-top: 20px;
     margin-left: 20px;
 }
@@ -195,7 +256,9 @@ header h2 {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .missionvision h2{
-    margin: auto;
+    border-bottom: 4px solid #888;
+    display: inline-block;
+    margin:auto auto 20px auto;
     font-size: 28px;
     color: #1d8c1d;
     font-weight: bolder;
@@ -207,10 +270,15 @@ header h2 {
     font-weight: bolder;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-
-
-
+.tm-btn{
+    padding: 20px;
+    margin: 20px auto 20px auto;
+    border: none;
+    color: white;
+    background-color: #44891c;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
 
 .footer{
     position: relative;
@@ -229,78 +297,98 @@ header h2 {
     justify-content: center;
     display: flex;
 }
-.cat {
-    background: rgba( 255, 255, 255, 0.3 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 2px );
-    -webkit-backdrop-filter: blur( 2px );
+#categ {
     text-align: center;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    padding: 20px;
     height: 110vh;
     background-image: url("imgs/photo-1495195129352-aeb325a55b65.avif");
-    background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
     background-attachment: fixed;
 }
-.optcontainer{
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-around; 
+.cat {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 150px;
+    border-bottom: 5px solid #1d8c1d;
+    color: #12372A;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline-block;
+    
+}
+
+.optcontainer {
+    display: flex;
+    justify-content: space-around;
 }
 
 .option {
-    flex-grow: 1;
-    position: relative;  
-    margin: 50px 20px;
-    background: rgba( 255, 255, 255, 0.3 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 2px );
-    -webkit-backdrop-filter: blur( 2px );
+    width: 30%;
+    margin: 20px;
+    margin-top: 5%;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     border-radius: 10px;
-}
-.cat h2{
-    border-radius: 10px;
-    border-bottom: 5px solid #1d8c1d;
-    display: inline-block;
-    padding-top: 10%;
-    font-size: 55px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.option a{
-    text-decoration: none;
-    color: #000;
-}
-.option h3 {
-    margin-top: 10px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
+    padding: 20px;
 }
 
-.option img {
-    width: 290px; 
-    height: auto;
-    aspect-ratio: 1/1;
-    margin-top: 10px; 
+.option h3 {
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 10px;
+    color: #436850;
+    border-bottom: 3px solid rgb(177, 177, 177);
+    display: inline-block;
+    border-radius: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.dish-container {
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+}
+
+.dish {
+    width: 30%;
+    text-align: center;
+}
+
+.dish img {
+    width: 100%;
+    border-radius: 10px;
 }
 .calories {
     display: block;
-    position: absolute; 
-    bottom: 0; 
-    left: 0; 
-    width: 86.6%; 
-    background: rgba(255, 255, 255, 0.8); 
-    padding: 20px; 
-    text-align: center; 
-    border-bottom-left-radius: 5px; 
-    border-bottom-right-radius: 5px; 
-    transition: opacity 0.3s ease;
-    opacity: 0;
-    font-weight: bolder;
+    font-size: 17px;
+    color: #888;
+    margin: 5px auto 5px auto;
+}
+.more-btn {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background-color:#1d8c1d;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.option:hover .calories {
-    opacity: 1;
+.more-btn:hover {
+    opacity: 0.8;    
 }
+
 
 #contacts {
     background-image: url("imgs/andrej-lisakov-3A4XZUopCJA-unsplash.jpg");
@@ -390,8 +478,8 @@ header h2 {
     color: #C13584; /* Change color on hover for Instagram */
 }
 .team {
-    background-image: url("C:/Users/Carl/WebSys/imgs/josh-calabrese-XXpbdU_31Sg-unsplash.jpg");
-    background-position: center;
+    background-image: url("imgs/photo-1505935428862-770b6f24f629.avif");
+    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -403,65 +491,107 @@ header h2 {
     font-size: 40px;
     font-weight: bolder;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#474747;
 }
 
 .team-members {
-    display: flex; /* Use flexbox for inline layout */
-    justify-content: center; /* Center the team members horizontally */
-    gap: 100px; /* Add spacing between team members */
+    display: flex;
+    justify-content: center; 
+    gap: 100px; 
     margin-top: 50px;
 }
 
 .team-member {
-    text-align: center; /* Center the content inside each team member */
-    max-width: 200px; /* Set maximum width for each team member */
+    text-align: center; 
+    max-width: 200px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 30px;
 }
 
 .team-member img {
-    width: 100%; /* Ensure images take up full width of their container */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 200px; /* Set maximum height for images */
-    border-radius: 50%; /* Optional: Rounded corners for circular images */
+    width: 100%; 
+    height: auto; 
+    max-height: 200px; 
+    border-radius: 50%; 
 }
 
 .team-member h4 {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: bolder;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .team-member p {
     margin-top: 5px;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: bolder;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
-@media (min-width: 300px) and (max-width: 770px) {
-    header{
-        display: none;
-        background: none;
+
+@media (min-width: 300px) and (max-width: 767px) { 
+    .menu-container {
+      flex-direction: column;
+      align-items: flex-end;
     }
-    header h2{
-        font-size: 18px;
+    
+    .menu-logo {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
     }
-    .menu{
-        display: none;
+  
+    .menu-logo img {
+      max-height: 30px;
+    }
+  
+    .menu {
+      position: absolute;
+      box-sizing: border-box;
+      width: 300px;
+      right: -400px;
+      top: 0;
+      margin: -20px;
+      padding: 75px 50px 50px;
+      background: #FFF67E;
+      -webkit-font-smoothing: antialiased;
+      transform-origin: 0% 0%;
+      transform: translateX(0%);
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+    .menu-container a{
+        color: black;
+    }
+  
+    .menu-container input:checked ~ .menu {
+      transform: translateX(-100%);
     }
     .intro{
         width: 100%;
+        margin: auto;
+        text-align: center;
     }
     .intro h2{
         font-size: 35px;
+        margin: auto;
     }
     .intro p{
-        width: 70%;
+        width: 90%;
         padding: 30px;
     }
     .missionvision{
         width: 90%;
+    }
+    #about{
+        padding-top: 110px;
     }
     .aboutus{
         width: 90%;
@@ -485,19 +615,65 @@ header h2 {
     .footer #quote{
         font-size: 20px;
     }
+    .cat{
+        padding-top: 100px;
+    }
     .cat h2{
         font-size: 45px;
     }
     .option {
-        width: calc(50% - 40px);
-        flex-grow: 0;
-        flex-direction: row;
-        margin-bottom: 20px;
+        max-width: 40%;
+        margin-top: 80px;
     }
-    .option:nth-last-child(1){
-        margin: 0;
+    .dish img {
+        aspect-ratio: 1/1;
+        width: 130px;
+        height: auto;
     }
-    .option img{
-        width: 180px;
+    .option #food2,
+    .option #food3,
+    .option #des2,
+    .option #des3,
+    .option #dr2,
+    .option #dr3 {
+        display: none; /* Hide specific images */
+    }
+    .team-member{
+        max-width: 150px;
     }
 }
+@media only screen and (min-width: 768px) { 
+    .menu-container {
+      width: 100%;
+    }
+  
+    .menu-container a {
+      color: #000000;
+    }
+  
+    .menu-container input {
+      display: none;
+    }
+  
+    /* Burger menu */
+    .menu-container span {
+      display: none;
+    }
+  
+    .menu {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .menu ul {
+      display: flex;
+      padding: 0;
+    }
+  
+    .menu li {
+      padding: 0 20px;
+    }
+  }
+  
