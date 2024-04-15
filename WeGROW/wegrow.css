@@ -127,7 +127,7 @@ body {
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the content vertically */
     height: 100vh;
-    background-image: url("C:/Users/Carl/WebSys/WeGROW/imgs/photo-1543353071-10c8ba85a904.avif");
+    background-image: url("imgs/photo-1543353071-10c8ba85a904.avif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position:bottom;
