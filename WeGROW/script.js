@@ -23,6 +23,7 @@ displayNextQuote();
 // Qoute changes every 3 seconds
 setInterval(displayNextQuote, 3000);
 
+
 window.addEventListener('scroll', function() {
     var mainContent = document.getElementById('main-content');
     var contacts = document.getElementById('contacts');
@@ -36,4 +37,29 @@ window.addEventListener('scroll', function() {
     } else {
         header.style.display = 'flex'; // Show the header otherwise
     }
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const foodImages = ["food/1.jpeg", "food/2crop.png", "food/3crop.png"];
+    const dessertImages = ["food/1.jpeg", "food/2crop.png", "food/3crop.png"];
+    const drinksImages = ["food/1.jpeg", "food/2crop.png", "food/3crop.png"];
+
+    const foodImageElement = document.querySelector(".food-image");
+    const dessertImageElement = document.querySelector(".dessert-image");
+    const drinksImageElement = document.querySelector(".drinks-image");
+
+    let foodIndex = 0;
+    let dessertIndex = 0;
+    let drinksIndex = 0;
+
+    setInterval(() => {
+        foodImageElement.src = foodImages[foodIndex];
+        dessertImageElement.src = dessertImages[dessertIndex];
+        drinksImageElement.src = drinksImages[drinksIndex];
+
+        foodIndex = (foodIndex + 1) % foodImages.length;
+        dessertIndex = (dessertIndex + 1) % dessertImages.length;
+        drinksIndex = (drinksIndex + 1) % drinksImages.length;
+    }, 3500);//3.5s
 });
