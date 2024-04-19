@@ -63,3 +63,29 @@ document.addEventListener("DOMContentLoaded", function() {
         drinksIndex = (drinksIndex + 1) % drinksImages.length;
     }, 3500);//3.5s
 });
+
+var timeout;
+
+window.addEventListener('scroll', function() {
+    var mainContent = document.getElementById('main-content');
+    var menuContainer = document.querySelector('.menu-container');
+
+    // Get the vertical scroll position
+    var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+    // Get the height of the main-content section
+    var mainContentHeight = mainContent.offsetHeight;
+
+    // If the scroll position is greater than the height of the main-content, show the menu-container
+    if (scrollPosition > mainContentHeight) {
+        menuContainer.style.opacity = '1';
+        menuContainer.style.visibility = 'visible';
+    } else {
+        // Hide the menu-container with a delay of 300 milliseconds
+        clearTimeout(timeout);
+        timeout = setTimeout(function() {
+            menuContainer.style.opacity = '0';
+            menuContainer.style.visibility = 'hidden';
+        }, 100);
+    }
+});
