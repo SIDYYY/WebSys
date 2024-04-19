@@ -546,8 +546,6 @@ body {
     text-align: center;
     margin: 20px 0;
   }
-
-
   
   @media (min-width: 300px) and (max-width: 767px) { 
     .menu-container {
@@ -603,9 +601,17 @@ body {
     .missionvision{
         width: 90%;
     }
+    .cat{
+        padding-top: 10%;
+    }
     #about {
-        padding-top: 20vh; /* Adjust padding as needed */
-        height: auto; /* Set height to auto */
+        padding-top: 20%; /* Adjust padding as needed */
+        height: 100vh; /* Set height to auto */
+    }
+    #categ{
+        padding-top: 10%;
+        height: auto;
+        width: 100vw;
     }
     .aboutus{
         width: 90%;
@@ -629,6 +635,7 @@ body {
     .footer #quote{
         font-size: 20px;
     }
+    
     .team-member{
         max-width: 150px;
     }
@@ -681,22 +688,68 @@ body {
     .menu li {
       padding: 0 20px;
     }
+    .intro{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .intro h2{
+        font-size: 35px;
+        margin: auto;
+    }
+    .intro p{
+        width: 90%;
+        padding: 30px;
+    }
+    .missionvision{
+        width: 90%;
+    }
     #about {
-        padding-top: 20vh; /* Adjust padding as needed */
-        height: auto; /* Set height to auto */
+        padding-top: 15%; /* Adjust padding as needed */
+        height: 100vh; /* Set height to auto */
+    }
+    #categ{
+        padding-top: 5%;
+        height: auto;
+        width: 100vw;
+    }
+    .aboutus{
+        width: 90%;
+        margin-top: 15px;
+    }
+    .aboutus h2,
+    .aboutus p{
+        padding-top: 10px;
+        margin-left: 10px;
+    }
+    .aboutus p{
+        font-size: 15px;
+    }
+    .missionvision p{
+        font-size: 15px;
+    }
+    .footer{
+        margin-top: 100px;
+        padding: 0;
+    }
+    .footer #quote{
+        font-size: 20px;
+    }
+    
+    .team-member{
+        max-width: 150px;
     }
     .category-container {
         display: grid;
         grid-template-rows: auto;
-        grid-template-columns: auto auto; 
+        grid-template-columns: auto auto; /* Reset grid layout to auto rows */
         gap: 10px;
         padding-top: 10px;
         justify-content: center; /* Center-align the grid items */
-        margin-top: 20px;
     }
 
     .categories {
-        width: 100%;
+        width:100% ; 
     }
 
   }
