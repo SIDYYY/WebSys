@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="wegrow.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+	<link rel="icon" type="image/x-icon" href="imgs\favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Eq4dvwtsbKbKhPI5koRIzD5SBs3Cj73b/DNFdvtZiNRaE/3yIcuATfRQjY9l+K63XfuD/mCJ5LHnWvfY1MYkAQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 </head>
@@ -25,15 +27,14 @@
 	  
 		<!-- menu items -->
 		<div class="menu">
-		  <ul>
-			<li><a href="#main-content">Home</a></li>
-			<li><a href="#about">About US</a></li>
-			<li><a href="#categ">Category</a></li>
-			<li><a href="#contacts">Contact</a></li>
-		  </ul>
-		  <ul>
-		  </ul>
+			<ul>
+				<li><a href="#main-content"><i class="fas fa-home"></i> Home</a></li>
+				<li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
+				<li><a href="#categ"><i class="fas fa-book-open"></i> Category</a></li>
+				<li><a href="#contacts"><i class="fas fa-envelope"></i> Contact</a></li>
+			</ul>
 		</div>
+		
 	  </nav>
 
     
@@ -53,7 +54,6 @@
     </main>
 	<section></section>
 
-    
     <div class="footer">
         <div id="quote"> 
 			
@@ -97,16 +97,18 @@
 		
 
 		<div id="about">
+			<div class="abt-container">
+			<img src="imgs\favicon.ico" alt="logo">
 			<h2 class="abt-head">About US</h2>
 			<div class="aboutus">
 				<div class="content">
-				<p>Welcome to We GROW, your hub for delicious, nutritious 
-				recipes and holistic wellness inspiration! We're passionate 
-				about making healthy eating a joyous experience for everyone. 
-				Join our community and discover the power of wholesome food to 
-				nourish your body and soul</p>
+				  <p>Welcome to We GROW, your hub for delicious, nutritious 
+				  recipes and holistic wellness inspiration! We're passionate 
+				  about making healthy eating a joyous experience for everyone. 
+				  Join our community and discover the power of wholesome food to 
+				  nourish your body and soul</p>
 				</div>
-			</div>
+			  </div>
 			<div class="missionvision">
 				<div class="content">
 				<h2> MISSION </h2>
@@ -126,6 +128,7 @@
 				</div>
 			</div>
 		</div>
+		</div>
 		<section class="team">
 			<h3>Our Team</h3>
 		<div class="team-members">
@@ -144,26 +147,39 @@
 		
 		
 		
-			<footer id="contacts">
+		<footer id="contacts">
+			<div class="footer-container">
+				<div class="info-container">
+					<div class="website-info">
+						<img src="imgs\favicon.ico" alt="logo">
+					</div>
+					<div class="social-icons">
+						<a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+						<a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+						<a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
+					</div>
+				</div>
+				<hr>
 				<div class="contact-form">
+					
 					<h3>Contact Us</h3>
 					<form action="carldaguinotas@gmail.com" method="post" enctype="text/plain">
 						<label for="name">Name</label><br>
-						<input type="text" id="name" name="name"><br>
+						<input type="text" placeholder="ex. Juan Dela Cruz"   id="name" name="name"><br>
 						<label for="email">Email</label><br>
-						<input type="email" id="email" name="email"><br>
+						<input type="email" placeholder="ex. jdelacruz@gmail.com" id="email" name="email"><br>
 						<label for="message">Message</label><br>
 						<textarea id="message" name="message" rows="4"></textarea><br>
 						<input type="submit" value="Send">
 					</form>
 				</div>
-				<div class="social-icons">
-					<a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
-					<a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
-					<a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
-				</div>
 				
-			</footer>
+			</div>
+			
+		</footer>
+		
+
+			<section> </section>
 	
 	
 		<script src="script.js" defer></script>
