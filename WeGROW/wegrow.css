@@ -211,6 +211,7 @@ body {
     opacity: 0.8;
 }
 #about{
+    width: 100vw;
     height: 100vh;
     text-align: center;
     background-image: url("imgs/photo-1556911220-e15b29be8c8f.avif");
@@ -277,9 +278,9 @@ body {
 }
 .missionvision{
     display: flex;
-    width: 70%;
+    width: 80%;
     padding: 20px;
-    margin: 50px auto auto auto;
+    margin: 25px auto auto auto;
     background: rgba( 255, 255, 255, 0.4 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
@@ -662,6 +663,9 @@ body {
     .aboutus p{
         font-size: 15px;
     }
+    .contacts{
+        height: 88vh;
+    }
     .missionvision p{
         font-size: 15px;
     }
@@ -764,9 +768,12 @@ body {
     .abt-head{
         padding-top: 4%;
     }
+    .abt-container{
+        height: 100vh;
+    }
     #about {
         width: 100vw;
-        height: 80vh;
+        height: 100vh;
     }
     #categ{
         padding-top: 5%;
@@ -815,7 +822,7 @@ body {
         text-align: center;
         padding-bottom: 5vh;
         color: black;
-        height: 90vh;
+        height: 87vh;
     }
 
   }

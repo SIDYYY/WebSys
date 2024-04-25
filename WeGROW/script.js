@@ -88,4 +88,6 @@ window.addEventListener('scroll', function() {
             menuContainer.style.visibility = 'hidden';
         }, 100);
     }
+
+    
 });
