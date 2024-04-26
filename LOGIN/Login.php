@@ -11,6 +11,7 @@
 </head>
 <body>
 
+<<<<<<< HEAD
                     <?php
                     session_start();
 
@@ -20,6 +21,11 @@
                         exit;
                     }
 
+=======
+<?php
+                    session_start();
+
+>>>>>>> 1c4c912aa2b79db00370f1b7662799d1ef1c534b
 
                     //PARA MO WORK NI NEED NI E ADD SA XAMPP -> htdocs NA DIRECTORY T_T  
                     if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -45,7 +51,11 @@
                         //CHECK IF USER EXISTS
                         if (pg_num_rows($result) == 1) {
                             $_SESSION["username"] = $username;
+<<<<<<< HEAD
                             header("Location: ../WeGROWforIM/wegrow.php");
+=======
+                            header("Location: ../WeGROW/wegrow.html");
+>>>>>>> 1c4c912aa2b79db00370f1b7662799d1ef1c534b
                             exit;
                         } else {
                             //ELSE DISPLAY ERROR
@@ -54,8 +64,13 @@
 
                         // Close 
                         pg_close($conn);
+<<<<<<< HEAD
                       }
                       ?>
+=======
+                    }
+                    ?>
+>>>>>>> 1c4c912aa2b79db00370f1b7662799d1ef1c534b
 
     <div class="container">
         

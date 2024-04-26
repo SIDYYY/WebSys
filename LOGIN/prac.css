@@ -45,11 +45,14 @@ input[type="submit"] {
     cursor: pointer;
     font-weight: bolder;
 }
+<<<<<<< HEAD
 .guest-button {
     margin-top: 10px;
 }
 
 
+=======
+>>>>>>> 1c4c912aa2b79db00370f1b7662799d1ef1c534b
 input[type="submit"]:hover {
     background-color: #388e3c; /* Darker green on hover */
 }
