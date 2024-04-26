@@ -363,12 +363,11 @@ body {
 
 .category-container {
     display: grid;
-    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, minmax(350px, 1fr));
     gap: 20px;
     padding-top: 10px;
     justify-content: space-evenly; /* Center-align the grid items */
 }
-
 .categories {
     margin-bottom: 40px;
     padding: 20px;
@@ -769,7 +768,7 @@ body {
         padding-top: 4%;
     }
     .abt-container{
-        height: 100vh;
+        height: 80vh;
     }
     #about {
         width: 100vw;
