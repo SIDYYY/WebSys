@@ -34,6 +34,7 @@ body {
     margin: 0;
     padding: 0;
   }
+
   
   .menu-container {
     position: fixed; /* Change to fixed position */
@@ -363,7 +364,8 @@ body {
 
 .category-container {
     display: grid;
-    grid-template-columns: repeat(3, minmax(350px, 1fr));
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    height: auto;
     gap: 20px;
     padding-top: 10px;
     justify-content: space-evenly; /* Center-align the grid items */
@@ -768,7 +770,7 @@ body {
         padding-top: 4%;
     }
     .abt-container{
-        height: 80vh;
+        height: 100vh;
     }
     #about {
         width: 100vw;
@@ -861,14 +863,6 @@ body {
     .menu li {
       padding: 0 20px;
     }
-    .category-container {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(250px, 1fr));
-        gap: 20px;
-        padding-top: 10px;
-        justify-content: space-evenly; /* Center-align the grid items */
-    }
-    
     .categories {
         margin-bottom: 40px;
         padding: 20px;
@@ -887,5 +881,14 @@ body {
         padding-top: 3vh;
         height: 100vh;
         width:auto;
+    }
+    .category-container {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(300px, 1fr));
+        height: auto;
+        gap: 20px;
+        padding-top: 10px;
+        height: auto;
+        justify-content: space-evenly; /* Center-align the grid items */
     }
   }

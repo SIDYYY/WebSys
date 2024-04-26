@@ -34,6 +34,7 @@ body {
     margin: 0;
     padding: 0;
   }
+
   
   .menu-container {
     position: fixed; /* Change to fixed position */
@@ -175,7 +176,7 @@ body {
     font-size: 1.2rem;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-.intro h2{
+.welcoming{
     font-size: 40px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: inline-block;
@@ -364,6 +365,7 @@ body {
 .category-container {
     display: grid;
     grid-template-columns: repeat(3, minmax(350px, 1fr));
+    height: auto;
     gap: 20px;
     padding-top: 10px;
     justify-content: space-evenly; /* Center-align the grid items */
@@ -768,7 +770,7 @@ body {
         padding-top: 4%;
     }
     .abt-container{
-        height: 80vh;
+        height: 100vh;
     }
     #about {
         width: 100vw;
@@ -887,5 +889,14 @@ body {
         padding-top: 3vh;
         height: 100vh;
         width:auto;
+    }
+    .category-container {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(350px, 1fr));
+        height: auto;
+        gap: 20px;
+        padding-top: 10px;
+        height: auto;
+        justify-content: space-evenly; /* Center-align the grid items */
     }
   }
