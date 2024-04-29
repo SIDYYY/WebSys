@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
         foodIndex = (foodIndex + 1) % foodImages.length;
         dessertIndex = (dessertIndex + 1) % dessertImages.length;
         drinksIndex = (drinksIndex + 1) % drinksImages.length;
-    }, 3500);//3.5s
+    }, 2000);//3.5s
 });
 
 var timeout;

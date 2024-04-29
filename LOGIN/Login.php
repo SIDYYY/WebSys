@@ -1,17 +1,14 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="prac.css" type="text/css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
     <title>Login</title>
 </head>
 <body>
 
-                    <?php
+                   <!-- <?php
                     session_start();
 
                     if (isset($_POST["guest"])) {
@@ -55,7 +52,7 @@
                         // Close 
                         pg_close($conn);
                       }
-                      ?>
+                      ?>-->
 
     <div class="container">
         
@@ -69,6 +66,7 @@
             <input type="password"placeholder="Password" id="password" name="password"><br><br>
             <input type="submit" value="Login">
             <input type="submit" name="guest" value="Browse as Guest" class="guest-button">
+            <p> Dont have account yet? <span class="reg"><a href="register.html"> Sign Up </a></span>
             </form>
     </div>
 

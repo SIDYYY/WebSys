@@ -1,31 +1,33 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #8bc34a; /* Light green background */
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: linear-gradient(to bottom right, #64dd17, #00bfa5); /* Gradient background */
 }
+
 .container {
-    width: 20%;
+    width: 30%;
     padding: 20px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: auto; /* Center the container horizontally */
-    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+
 h2 {
     text-align: center;
     margin-bottom: 20px;
     color: #4caf50; /* Green header text */
 }
+
 label {
     font-weight: bold;
     color: #4caf50; /* Green label text */
 }
+
 input[type="text"],
 input[type="password"] {
     width: 100%;
@@ -35,7 +37,9 @@ input[type="password"] {
     border-radius: 5px;
     box-sizing: border-box;
 }
-input[type="submit"] {
+
+input[type="submit"],
+.guest-button {
     width: 100%;
     padding: 10px;
     border: none;
@@ -43,24 +47,35 @@ input[type="submit"] {
     background-color: #4caf50; /* Green submit button */
     color: #fff;
     cursor: pointer;
-    font-weight: bolder;
+    font-weight: bold;
 }
-<<<<<<< HEAD
+
 .guest-button {
     margin-top: 10px;
 }
 
-
-=======
->>>>>>> 1c4c912aa2b79db00370f1b7662799d1ef1c534b
-input[type="submit"]:hover {
+input[type="submit"]:hover,
+.guest-button:hover {
     background-color: #388e3c; /* Darker green on hover */
 }
+
+p {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.reg a {
+    color: #64dd17; /* Green color for sign up link */
+}
+
+
 .error-message {
     color: red;
     text-align: center;
     margin-bottom: 10px; /* Add some bottom margin for spacing */
 }
+
 .error-banner {
     display: none;
     position: fixed;
@@ -72,4 +87,32 @@ input[type="submit"]:hover {
     padding: 15px;
     text-align: center;
     z-index: 1000; /* Ensure it appears above other elements */
+}
+p {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.reg a {
+    color: #64dd17; /* Green color for sign up link */
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+    .container {
+        width: 60%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 940px) {
+    .container {
+        width: 50%;
+    }
+}
+
+@media (min-width: 941px) {
+    .container {
+        width: 20%;
+    }
 }

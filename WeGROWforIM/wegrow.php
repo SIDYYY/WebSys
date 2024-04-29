@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="wegrow.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
-	<link rel="icon" type="image/x-icon" href="imgs\favicon.ico">
+	<link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Eq4dvwtsbKbKhPI5koRIzD5SBs3Cj73b/DNFdvtZiNRaE/3yIcuATfRQjY9l+K63XfuD/mCJ5LHnWvfY1MYkAQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	
