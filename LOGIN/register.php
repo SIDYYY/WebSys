@@ -24,7 +24,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Execute query
     $result = pg_query($conn, $sql);
     if ($result) {
-        // Redirect to the main page after successful registration
         header("Location: ..\LOGIN\Login.php");
         exit;
     } else {

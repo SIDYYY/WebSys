@@ -8,51 +8,58 @@
 </head>
 <body>
 
-                   <!-- <?php
-                    session_start();
+                    <?php
+                        session_start();
 
-                    if (isset($_POST["guest"])) {
-                        $_SESSION["username"] = "Guest";
-                        header("Location: ../WeGROWforIM/guest.php");
-                        exit;
-                    }
-
-
-                    //PARA MO WORK NI NEED NI E ADD SA XAMPP -> htdocs NA DIRECTORY T_T  
-                    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                        // CONNECTOR NI ILISI SAIMONG POSTGRE OG MAG CREATE KAA
-                        $conn = pg_connect("host=localhost port=5432 dbname=Login user=postgres password=Carl");
-                        if (!$conn) {
-                            echo "Failed to connect to database.";
+                        // Check if "Browse as Guest" button is clicked
+                        if (isset($_POST["guest"])) {
+                            // Set session username as "Guest"
+                            $_SESSION["username"] = "Guest";
+                            // Redirect to the guest page
+                            header("Location: ../WeGROWforIM/guest.php");
                             exit;
                         }
 
-                        
-                        $username = $_POST["username"] ?? "";
-                        $password = $_POST["password"] ?? "";
+                        // Check if the login form is submitted
+                        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                            // Connect to the PostgreSQL database
+                            $conn = pg_connect("host=localhost port=5432 dbname=Login user=postgres password=Carl");
+                            if (!$conn) {
+                                echo "Failed to connect to database.";
+                                exit;
+                            }
 
-                    
-                        $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
-                        $result = pg_query($conn, $query);
-                        if (!$result) {
-                            echo "Error in query: " . pg_last_error($conn);
-                            exit;
+                            // Sanitize user input to prevent SQL Injection
+                            $username = pg_escape_string($conn, $_POST["username"] ?? "");
+                            $password = pg_escape_string($conn, $_POST["password"] ?? "");
+
+                            // Query to fetch user details including f_name
+                            $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+                            $result = pg_query($conn, $query);
+                            if (!$result) {
+                                echo "Error in query: " . pg_last_error($conn);
+                                exit;
+                            }
+
+                            // Check if user exists
+                            if (pg_num_rows($result) == 1) {
+                                // Fetch user details
+                                $row = pg_fetch_assoc($result);
+                                // Store f_name in session
+                                $_SESSION["f_name"] = $row["f_name"];
+                                // Redirect to the main page
+                                header("Location: ../WeGROWforIM/wegrow.php");
+                                exit;
+                            } else {
+                                // Display error message if username or password is invalid
+                                $error_message = "Invalid username or password.";
+                            }
+
+                            // Close database connection
+                            pg_close($conn);
                         }
+                        ?>
 
-                        //CHECK IF USER EXISTS
-                        if (pg_num_rows($result) == 1) {
-                            $_SESSION["username"] = $username;
-                            header("Location: ../WeGROWforIM/wegrow.php");
-                            exit;
-                        } else {
-                            //ELSE DISPLAY ERROR
-                            $error_message = "Invalid username or password.";
-                        }
-
-                        // Close 
-                        pg_close($conn);
-                      }
-                      ?>-->
 
     <div class="container">
         
