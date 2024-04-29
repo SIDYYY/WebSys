@@ -49,28 +49,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="name-container">
             <div>
                 <br><label for="firstname">First Name</label>
-                <input type="text" id="firstname" name="firstname" placeholder="First Name">
+                <input type="text" id="firstname" name="firstname" required placeholder="First Name">
             </div>
             <div>
                 <br><label for="lastname">Last Name</label>
-                <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+                <input type="text" id="lastname" name="lastname"required placeholder="Last Name">
             </div>
         </div>
         <div>
             <br><label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Email">
+            <input type="email" id="email" name="email" required placeholder="Email">
         </div>
         <div>
             <br><label for="age">Age</label>
-            <input type="number" id="age" name="age" placeholder="Age">
+            <input type="number" id="age" name="age" required placeholder="Age">
         </div>
         <div>
             <br><label for="username">Username</label>
-            <input type="text" id="username" name="username" placeholder="Username">
+            <input type="text" id="username" name="username" requiredplaceholder="Username">
         </div>
         <div>
             <br><label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Password">
+            <input type="password" id="password" name="password" required placeholder="Password">
         </div>
         <br><input type="submit" value="Submit">
         <p> Already have an account?<span class="reg"><a href="Login.php"> Login </a></span></p></br>

@@ -68,9 +68,9 @@
 
         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
             <label for="username">Username</label><br>
-            <input type="text" placeholder="Username"id="username" name="username"><br>
+            <input type="text" placeholder="Username"id="username"required name="username"><br>
             <label for="password">Password </label><br>
-            <input type="password"placeholder="Password" id="password" name="password"><br><br>
+            <input type="password"placeholder="Password" id="password"required name="password"><br><br>
             <input type="submit" value="Login">
             <input type="submit" name="guest" value="Browse as Guest" class="guest-button">
             <p> Dont have account yet? <span class="reg"><a href="register.html"> Sign Up </a></span>

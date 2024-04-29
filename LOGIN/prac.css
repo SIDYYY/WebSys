@@ -66,7 +66,7 @@ input[type="submit"],
 }
 
 input[type="submit"]:hover {
-    background-color: #388e3c; /* Darker green on hover */
+    background-color: #388e3c;
 }
 
 
@@ -81,7 +81,8 @@ p {
 }
 
 .reg a {
-    color: #64dd17; /* Green color for sign up link */
+    color: #64dd17;
+    display: inline-block;
 }
 
 
@@ -94,14 +95,15 @@ p {
 .error-banner {
     display: none;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: 75%;
+    left: 39.5%;
+    width: 20%;
     background-color: #f44336;
     color: white;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
-    z-index: 1000; /* Ensure it appears above other elements */
+    z-index: 1000;
+    border-radius: 50px;
 }
 p {
     text-align: center;
@@ -113,10 +115,28 @@ p {
     color: #64dd17; /* Green color for sign up link */
 }
 
-/* Media Queries */
 @media (max-width: 767px) {
     .container {
         width: 60%;
+    }
+    .error-message {
+        color: red;
+        text-align: center;
+        margin-bottom: 10px; /* Add some bottom margin for spacing */
+    }
+    
+    .error-banner {
+        display: none;
+        position: fixed;
+        top: 75%;
+        left: 28%;
+        width: 40%;
+        background-color: #f44336;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        z-index: 1000;
+        border-radius: 50px;
     }
 }
 
@@ -124,10 +144,29 @@ p {
     .container {
         width: 50%;
     }
+    .error-message {
+        color: red;
+        text-align: center;
+        margin-bottom: 10px; /* Add some bottom margin for spacing */
+    }
+    
+    .error-banner {
+        display: none;
+        position: fixed;
+        top: 75%;
+        left: 23.9%;
+        width: 50%;
+        background-color: #f44336;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        z-index: 1000;
+        border-radius: 50px;
+    }
 }
 
 @media (min-width: 941px) {
     .container {
-        width: 20%;
+        width: 22%;
     }
 }
