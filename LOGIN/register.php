@@ -1,7 +1,6 @@
-//change the connectors information, MAY HAHAHAHA
-//AFTER REGISTRATION MO BALIK NIS LOGIN SHARE SILAG STYLE NI LOGIN BTW!
 
-<?php
+
+<!--<?php
 // Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Connect to your database
@@ -13,10 +12,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Sanitize user input to prevent SQL Injection
     $name = pg_escape_string($conn, $_POST['username']);
-    $email = pg_escape_string($conn, $_POST['password']);
+    $pass = pg_escape_string($conn, $_POST['password']);
+    $email = pg_escape_string($conn, $_POST['email']);
+    $fname = pg_escape_string($conn, $_POST['firstname']);
+    $lname = pg_escape_string($conn, $_POST['lastname']);
+    $age = pg_escape_string($conn, $_POST['age']);
 
     // Create SQL query to insert data into table
-    $sql = "INSERT INTO users (username, password) VALUES ('$name', '$email')";
+    $sql = "INSERT INTO users (username, password,email,f_name,l_name,age) VALUES ('$name', '$pass',$email,$fname,$lname,$age)";
 
     // Execute query
     $result = pg_query($conn, $sql);
@@ -31,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Close database connection
     pg_close($conn);
 }
-?>
+?>!-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,12 +46,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <div class="container">
     <h2> REGISTRATION </h2>
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-        <label for="username">Username</label><br>
-        <input type="text" name="username" placeholder="username">
-        <label for="password">Password</label><br>
-        <input type="password" name="password" placeholder="password">
-        <input type="submit" value="Submit">
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>
+        <div class="name-container">
+            <div>
+                <br><label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname" placeholder="First Name">
+            </div>
+            <div>
+                <br><label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+            </div>
+        </div>
+        <div>
+            <br><label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email">
+        </div>
+        <div>
+            <br><label for="age">Age</label>
+            <input type="number" id="age" name="age" placeholder="Age">
+        </div>
+        <div>
+            <br><label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Username">
+        </div>
+        <div>
+            <br><label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password">
+        </div>
+        <br><input type="submit" value="Submit">
         <p> Already have an account?<span class="reg"><a href="Login.php"> Login </a></span></p></br>
     </form>
     </div>

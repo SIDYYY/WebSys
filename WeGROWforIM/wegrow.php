@@ -48,9 +48,9 @@
                     session_start();
 
                     // Check if username is set in session
-                    if(isset($_SESSION['username'])) {
+                    if(isset($_SESSION['f_name'])) {
                         // Display the username in the menu
-                        echo '<div class="welcoming">Welcome to WE-GROW, ' . $_SESSION['username'] . '</div>';
+                        echo '<div class="welcoming">Welcome to WE-GROW, ' . $_SESSION['f_name'] . '</div>';
                     }
                 ?>
 

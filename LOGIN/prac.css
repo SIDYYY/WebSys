@@ -17,25 +17,40 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #4caf50; /* Green header text */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.name-container {
+    display: flex;
+}
+
+.name-container div {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.name-container div:last-child {
+    margin-right: 0;
 }
 
 label {
+    display: block;
     font-weight: bold;
-    color: #4caf50; /* Green label text */
+    font-size: 14px;
 }
 
 input[type="text"],
-input[type="password"] {
+input[type="email"],
+input[type="password"],
+input[type="number"] {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
+    margin-top: 5px;
 }
 
 input[type="submit"],
@@ -47,16 +62,16 @@ input[type="submit"],
     background-color: #4caf50; /* Green submit button */
     color: #fff;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: bolder;
 }
+
+input[type="submit"]:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}
+
 
 .guest-button {
     margin-top: 10px;
-}
-
-input[type="submit"]:hover,
-.guest-button:hover {
-    background-color: #388e3c; /* Darker green on hover */
 }
 
 p {
