@@ -25,15 +25,19 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
     background: #6b9030; 
   }
-html{
+
+  html{
     scroll-behavior: smooth;
-}
-body {  
-    overflow-x: hidden;
-    font-family: Sans-Serif;
-    margin: 0;
-    padding: 0;
   }
+  html, body {
+    overflow-x: hidden; /* Optional: Hide horizontal scrollbar */
+    overflow-y: auto;   /* Enable vertical scrollbar */
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+}
 
   
   .menu-container {
@@ -141,7 +145,7 @@ body {
   .menu li {
     padding: 10px 0px;
     font-size: 15px;
-  }
+  } 
 
 #main-content {
     display: flex; /* Use flexbox */
@@ -425,6 +429,7 @@ body {
     text-align: center;
     padding-bottom: 5vh;
     color: rgb(21, 21, 21);
+    height: auto;
 }
 .website-info {
     flex: 1;
@@ -442,7 +447,7 @@ body {
 }
 
 .contact-form h3 {
-    padding-top:13%;
+    padding-top:3%;
     font-size: 30px;
     font-weight: bolder;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -455,7 +460,6 @@ body {
 }
 
 .contact-form label {
-    margin-bottom: 5px;
     font-size: 17px;
     font-weight: bold;
 }
@@ -463,7 +467,7 @@ body {
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-    width: 100%;
+    width: 96%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -690,16 +694,17 @@ body {
         width: 80%;
     }
     .category-container {
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: auto auto; /* Reset grid layout to auto rows */
-        gap: 10px;
-        padding-top: 10px;
-        justify-content: space-evenly; /* Center-align the grid items */
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 10px;
+            margin: 2rem auto auto auto; 
+            align-items: center;
+            text-align: center;
     }
 
     .categories {
-        width:100% ; 
+        width:200PX ; 
     }
     #contacts{
         height: 90vh;
