@@ -2,186 +2,181 @@
 <html>
     <head>
 
-    <title>Landing Page</title>
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
     rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <link href="food.css" rel="stylesheet"/>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Food - Category </title>
+    <link rel="icon" type="image/x-icon" href="imgs\favicon.ico">
 
     </head>
 
     <body> 
         <section class="section__container category__container">
             <p class="section__subheader">WE GROW <span><i class="ri-leaf-fill"></i></span></p>
-            <h2 class="section__header">The Most Delicious and Healthy Food Starts Here.</h2>
-            <div class="category__grid">
-              <div class="category__card">
-                <div class="category__card__image">
-                  <img src="food\1.jpeg" alt="food" />
-                  <div class="category__card__icons">
-                    <span><i class="ri-heart-fill"></i></span>
+            <h2 class="section__header">FOOD - Category</h2>
+            <ul class="category__list">
+              <li><a href="wegrow.html">Home</a></li>
+              <li><a href="dessert.html">Dessert</a></li>
+              <li><a href="others.html">Drink</a></li>
+          </ul>
+            <!--1ST CARD-->
+            <div class="card-holder">
+              <div class="contain">
+              <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                      <button class="show-btn" onclick="toggleContent(this)">Show Ingredients and Procedure</button>
 
-                  </div>
-                </div>
-                <div class="category__card__details">
-                  <h4>Gulay Recipe</h4>
-                  <p>
-                    This colorful dish bursts with flavor and is a perfect balance of healthy and delicious. Serve over steamed rice for a quick and satisfying meal!
-                  </p>
-                  <h5>Estimated calories <span>100</span></h5>
-                  <button class="btn">Cook Now</button>
-                </div>
-              </div>
-              <div class="category__card">
-                <div class="category__card__image">
-                  <img src="food\2crop.png" alt="food" />
-                  <div class="category__card__icons">
-                    <span><i class="ri-heart-fill"></i></span>
+                        <!-- Front content of the card -->
+                        <h3>Avocado Toast</h3>
+                        <img src="imgs\EatingWell-April-Avocado-Toast-Beauty-Angle-1x1-5dbdcb43cc6a43d588a620fdb9a42bf4.jpg" alt="1stfood">
+                        <p class="description">Creamy mashed avocado on toasted bread; cal ranges from 200 to 300 calories.</p>
+                    </div>
+                    <div class="card-back">
+                        <!-- Back content of the card -->
+                        <div class="show-content">
+                          <button class="back-btn" onclick="toggleContent(this)"><i class="fas fa-times"></i></button>
+                            <h4>Ingredients</h4>
+                            <ol>
+                                <li>1 ripe avocado
+                                </li>
+                                <li>2 slices whole grain bread
+                                </li>
+                                <li>1 tablespoon lemon juice
+                                </li>
+                                <li>Salt and pepper to taste
+                                </li>
+                                <li>Optional toppings: cherry tomatoes, red pepper flakes, sliced radishes, etc.
+                                </li>
+                            </ol>
+                            <h4>Procedure</h4>
+                            <ol>
+                                <li>Toast the slices of whole grain bread until golden brown.
+                                </li>
+                                <li>While the bread is toasting, scoop out the flesh of the avocado into a bowl and mash it with a fork.
+                                </li>
+                                <li>Add lemon juice, salt, and pepper to the mashed avocado and mix well.
+                                </li>
+                                <li>Spread the mashed avocado evenly on the toasted bread slices.
 
-                  </div>
+                                </li>
+                                <li>Top with your favorite optional toppings if desired.
+                                </li>
+                                <li>Serve immediately and enjoy!
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
                 </div>
-                <div class="category__card__details">
-                  <h4>Gulay Recipe</h4>
-                  <p>
-                    This colorful dish bursts with flavor and is a perfect balance of healthy and delicious. Serve over steamed rice for a quick and satisfying meal!
-                  </p>
-                  <h5>Estimated calories <span>100</span></h5>
-                  <button class="btn">Cook Now</button>
-                </div>
-              </div>
-              <div class="category__card">
-                <div class="category__card__image">
-                  <img src="food\3crop.png" alt="food" />
-                  <div class="category__card__icons">
-                    <span><i class="ri-heart-fill"></i></span>
-                  </div>
-                </div>
-                <div class="category__card__details">
-                  <h4>Gulay Recipe</h4>
-                  <p>
-                    This colorful dish bursts with flavor and is a perfect balance of healthy and delicious. Serve over steamed rice for a quick and satisfying meal!
-                  </p>
-                  <h5>Estimated calories <span>100</span></h5>
-                  <button class="btn">Cook Now</button>
-                </div>
-              </div>
             </div>
-          </section>
+          </div>
+            <!--2nd CARD-->
+            <div class="contain">
+            <div class="card">
+              <div class="card-inner">
+                  <div class="card-front">
+                    <button class="show-btn" onclick="toggleContent(this)">Show Ingredients and Procedure</button>
 
-          <section class="section__container category__container">
-            <div class="category__grid">
-              <div class="category__card">
-                <div class="category__card__image">
-                  <img src="food\1.jpeg" alt="food" />
-                  <div class="category__card__icons">
-                    <span><i class="ri-heart-fill"></i></span>
+                      <!-- Front content of the card -->
+                      <h3>Spinach Salad</h3>
+                      <img src="imgs\spinach-salad.jpg" alt="1stfood">
+                      <p class="description">Fresh spinach leaves with toppings  usually around 150 to 250 calories.</p>
+                  </div>
+                  <div class="card-back">
+                      <!-- Back content of the card -->
+                      <div class="show-content">
+                        <button class="back-btn" onclick="toggleContent(this)"><i class="fas fa-times"></i></button>
 
+                          <h4>Ingredients</h4>
+                          <ol>
+                              <li>Baby spinach leaves</li>
+                              <li>Cherry tomatoes, halved</li>
+                              <li>Cucumber, sliced</li>
+                              <li>Red onion, thinly sliced</li>
+                              <li>Feta cheese, crumbled</li>
+                              <li>Balsamic vinegar</li>
+                              <li>Olive oil</li>
+                              <li>Salt and pepper</li>
+                          </ol>
+                          <h4>Procedure</h4>
+                          <ol>
+                              <li>In a large salad bowl, combine baby spinach leaves, cherry tomatoes, cucumber slices, red onion slices, and crumbled feta cheese.</li>
+                              <li>In a small bowl, whisk together balsamic vinegar, olive oil, salt, and pepper to make the dressing.
+                              </li>
+                              <li>Drizzle the dressing over the salad and toss to coat evenly.
+                              </li>
+                              <li>Serve immediately as a nutritious and flavorful salad.
+                              </li>
+                          </ol>
+                      </div>
                   </div>
-                </div>
-                <div class="category__card__details">
-                  <h4>Gulay Recipe</h4>
-                  <p>
-                    This colorful dish bursts with flavor and is a perfect balance of healthy and delicious. Serve over steamed rice for a quick and satisfying meal!
-                  </p>
-                  <h5>Estimated calories <span>100</span></h5>
-                  <button class="btn">Cook Now</button>
-                </div>
               </div>
-              <div class="category__card">
-                <div class="category__card__image">
-                  <img src="food\2crop.png" alt="food" />
-                  <div class="category__card__icons">
-                    <span><i class="ri-heart-fill"></i></span>
+          </div>
+          </div>
+          <!--3RD CARD-->
+          <div class="contain">
+          <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                  <button class="show-btn" onclick="toggleContent(this)">Show Ingredients and Procedure</button>
 
-                  </div>
+                    <!-- Front content of the card -->
+                    <h3>Baked Salmon</h3>
+                    <img src="imgs\263217-BakedSalmonInFoil-MFS-MFS-2X3-0269-03a69c31414f46c882dc7d9b8f46534c.jpg" alt="1stfood">
+                    <p class="description">Seasoned salmon fillets baked  approximately 250 to 350 calories per serving.</p>
                 </div>
-                <div class="category__card__details">
-                  <h4>Gulay Recipe</h4>
-                  <p>
-                    This colorful dish bursts with flavor and is a perfect balance of healthy and delicious. Serve over steamed rice for a quick and satisfying meal!
-                  </p>
-                  <h5>Estimated calories <span>100</span></h5>
-                  <button class="btn">Cook Now</button>
+                <div class="card-back">
+                    <!-- Back content of the card -->
+                    <div class="show-content">
+                      <button class="back-btn" onclick="toggleContent(this)"><i class="fas fa-times"></i></button>
+                        <h4>Ingredients</h4>
+                        <ol>
+                            <li>Salmon fillets                            </li>
+                            <li>Lemon slices
+                            </li>
+                            <li>Fresh herbs (such as dill, parsley, or thyme)
+                            </li>
+                            <li>Olive oil
+                            </li>
+                            <li>Salt and pepper
+                            </li>
+                        </ol>
+                        <h4>Procedure</h4>
+                        <ol>
+                            <li>Preheat the oven to 375°F (190°C).
+                            </li>
+                            <li>Place salmon fillets on a baking sheet lined with parchment paper.
+                            </li>
+                            <li>Drizzle olive oil over the salmon fillets and season with salt and pepper.
+                            </li>
+                            <li>Place lemon slices and fresh herbs on top of each salmon fillet.
+                            </li>
+                            <li>Bake in the preheated oven for 12-15 minutes or until the salmon is cooked through and flakes easily with a fork.
+                            </li>
+                            <li>Serve immediately with your favorite side dishes for a healthy and delicious meal.
+                            </li>
+                        </ol>
+                    </div>
                 </div>
-              </div>
-              <div class="category__card">
-                <div class="category__card__image">
-                  <img src="food\3crop.png" alt="food" />
-                  <div class="category__card__icons">
-                    <span><i class="ri-heart-fill"></i></span>
-                  </div>
-                </div>
-                <div class="category__card__details">
-                  <h4>Gulay Recipe</h4>
-                  <p>
-                    This colorful dish bursts with flavor and is a perfect balance of healthy and delicious. Serve over steamed rice for a quick and satisfying meal!
-                  </p>
-                  <h5>Estimated calories <span>100</span></h5>
-                  <button class="btn">Cook Now</button>
-                </div>
-              </div>
             </div>
-          </section>
+        </div>
+        </div>
 
-
-          <section class="section__container category__container">
-            <div class="category__grid">
-              <div class="category__card">
-                <div class="category__card__image">
-                  <img src="food\1.jpeg" alt="food" />
-                  <div class="category__card__icons">
-                    <span><i class="ri-heart-fill"></i></span>
-
-                  </div>
-                </div>
-                <div class="category__card__details">
-                  <h4>Gulay Recipe</h4>
-                  <p>
-                    This colorful dish bursts with flavor and is a perfect balance of healthy and delicious. Serve over steamed rice for a quick and satisfying meal!
-                  </p>
-                  <h5>Estimated calories <span>100</span></h5>
-                  <button class="btn">Cook Now</button>
-                </div>
+            
               </div>
-              <div class="category__card">
-                <div class="category__card__image">
-                  <img src="food\2crop.png" alt="food" />
-                  <div class="category__card__icons">
-                    <span><i class="ri-heart-fill"></i></span>
+            </section>
+              
+            
+            
+            
+          
 
-                  </div>
-                </div>
-                <div class="category__card__details">
-                  <h4>Gulay Recipe</h4>
-                  <p>
-                    This colorful dish bursts with flavor and is a perfect balance of healthy and delicious. Serve over steamed rice for a quick and satisfying meal!
-                  </p>
-                  <h5>Estimated calories <span>100</span></h5>
-                  <button class="btn">Cook Now</button>
-                </div>
-              </div>
-              <div class="category__card">
-                <div class="category__card__image">
-                  <img src="food\3crop.png" alt="food" />
-                  <div class="category__card__icons">
-                    <span><i class="ri-heart-fill"></i></span>
-                  </div>
-                </div>
-                <div class="category__card__details">
-                  <h4>Gulay Recipe</h4>
-                  <p>
-                    This colorful dish bursts with flavor and is a perfect balance of healthy and delicious. Serve over steamed rice for a quick and satisfying meal!
-                  </p>
-                  <h5>Estimated calories <span>100</span></h5>
-                  <button class="btn">Cook Now</button>
-                </div>
-              </div>
-            </div>
-          </section>
-
-
+          <script src="categ.js" defer></script>
     </body>
 </html>
