@@ -91,3 +91,20 @@ window.addEventListener('scroll', function() {
 
     
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const Images = ["imgs/fruit-salad-98841227-5848619a5f9b5851e5f87d5c.jpg","imgs/green-smoothie-8-1200-500x500.jpg","imgs/IMG_0075-banana-pudding.jpg","imgs/Triple-Berry-Smoothie-square-featured.jpg","imgs/watermelon-coconut-agua-fresca-featured-pic-sq.webp","imgs/263217-BakedSalmonInFoil-MFS-MFS-2X3-0269-03a69c31414f46c882dc7d9b8f46534c.jpg", "imgs/spinach-salad.jpg", "imgs/EatingWell-April-Avocado-Toast-Beauty-Angle-1x1-5dbdcb43cc6a43d588a620fdb9a42bf4.jpg"];
+
+    const ImagesElement = document.querySelector(".changing-img");
+    
+    let ImagesIndex = 0;
+
+
+    setInterval(() => {
+        ImagesElement.src = Images[ImagesIndex];
+
+
+        ImagesIndex = (ImagesIndex + 1) % Images.length;
+
+    }, 2000);//3.5s
+});
