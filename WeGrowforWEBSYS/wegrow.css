@@ -243,7 +243,7 @@ body{
 }
 
 .aboutus{
-    margin: 0 0 0 50px;
+    margin: 0 0 0 60px;
     display: flex;
     width: 40%;
     background: rgba( 255, 255, 255, 0.5 );
@@ -266,11 +266,13 @@ body{
     align-items: center;
     margin: auto;
     aspect-ratio: 1;
+    border-radius: 30% 70% 56% 44% / 30% 46% 54% 70% ;   
+
 }
 .aboutus img{
     width: 25%;
     height: auto;
-    border-radius: 100px;   
+    border-radius: 30% 70% 56% 44% / 30% 46% 54% 70% ;   
     display: flex;
 }
 .aboutus h2, 
@@ -313,22 +315,36 @@ body{
 .contact-btn a:hover{
     background-color: #44891c;
 }
+.changing-img{
+    border-radius: 100% 0% 73% 27% / 37% 41% 59% 63%  ;
+    -moz-border-radius: 153px 18px 166px 131px;
+    border: 4px groove #7fe390;
+    
+}
 .img-holder {
     position: relative;
     width: 500px;
     height: auto;
     overflow: hidden;
-    border-radius: 50%;
+    border-radius: 100% 0% 73% 27% / 37% 41% 59% 63%  ;
+    -moz-border-radius: 153px 18px 166px 131px;
+    border: 4px groove #7fe390;    
   }
 
   .img-holder img {
     width: 100%;
     height: 100%;
     transition: transform 0.3s ease;
+    border-radius: 100% 0% 73% 27% / 37% 41% 59% 63%  ;
+    -moz-border-radius: 153px 18px 166px 131px;
+    border: 4px groove #7fe390;
   }
 
   .img-holder:hover img {
     transform: scale(1.1);
+    border-radius: 100% 0% 73% 27% / 37% 41% 59% 63%  ;
+    -moz-border-radius: 153px 18px 166px 131px;
+    border: 4px groove #7fe390;
   }
 
 .footer{
@@ -446,6 +462,7 @@ body{
 
 }
 
+
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -494,6 +511,8 @@ body{
 
 .contact-form form {
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .contact-form input,
@@ -718,7 +737,7 @@ body{
         width:230px;
     }
     #contacts{
-        padding-top: 100px;
+        padding-top: 30px;
         text-align: center;
     }
     .contact-form{
@@ -727,7 +746,9 @@ body{
     .contact-form form{
         width: 70%;
         margin:auto;
+        
     }
+    
     .contact-form input,button,textarea{
         padding: 10px;
         border: 1px solid black;
