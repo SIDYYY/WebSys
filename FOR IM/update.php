@@ -12,14 +12,12 @@ if(isset($_GET['id'])) {
         $row = pg_fetch_assoc($result);
         $name = $row['name'];
         $description = $row['description'];
+        $stock = $row['stock'];
         $price = $row['price'];
     } else {
         echo "Item not found.";
         exit();
     }
-} else {
-    echo "No ID provided.";
-    exit();
 }
 
 
@@ -39,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: home.php");
         exit();
     } else {
-        // PHP code to generate JavaScript popup message
+        // Popup message if update failed.
         $message = "Cant be updated!";
         echo "<script>alert('$message');</script>";
 
