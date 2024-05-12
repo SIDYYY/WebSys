@@ -22,7 +22,7 @@ function Contact() {
               <li><a href="#"><i className="fab fa-linkedin"></i></a></li>
             </ul>
           </div>
-          <div className="contact-form">
+          {/*<div className="contact-form">
             <h3 className="contact-form-header">Send Us a Message</h3>
             <form>
               <input type="text" placeholder="Your Name" required />
@@ -30,7 +30,7 @@ function Contact() {
               <textarea placeholder="Your Message" rows="4" required></textarea>
               <button type="submit">Send</button>
             </form>
-          </div>
+          </div>*/}
         </div>
       </footer>
   );
