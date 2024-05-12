@@ -660,8 +660,10 @@ body::-webkit-scrollbar-thumb:hover {
       transform: translateX(-100%);
     }
     .intro{
-        width: 100%;
+        width: auto;
+        height: 100vh;
         margin: auto;
+        padding-top: 7.5rem;
         text-align: center;
     }
     .intro h2{
@@ -692,6 +694,9 @@ body::-webkit-scrollbar-thumb:hover {
         padding-top: 2.5rem;
         height: auto;
     }
+    .abt-container{
+        height: auto;
+    }
     .aboutus h2,
     .aboutus p{
         padding-top: 10px;
@@ -714,16 +719,15 @@ body::-webkit-scrollbar-thumb:hover {
         font-size: 20px;
     }
     .team-members{
+        width: auto;
+        height: auto;
         flex-direction: row;
         justify-content: center;
         align-items: center;
     }
     .team-member{
-        width: 150px;
-    }
-    .missionvision{
-        flex-direction: column;
-        width: 80%;
+        width: auto;
+        height: auto;    
     }
     .category-container {
             display: flex; 
