@@ -179,6 +179,11 @@ body::-webkit-scrollbar-thumb:hover {
     height: auto;
     text-align: center;
     right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
 }
 .intro p{
     font-weight: bolder;
@@ -674,7 +679,7 @@ body::-webkit-scrollbar-thumb:hover {
     }
     .intro h2{
         font-size: 35px;
-        margin: auto;
+        margin: 0;
     }
     .intro p{
         width: 90%;
