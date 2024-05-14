@@ -40,9 +40,9 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
   
-  .menu-container {
+.menu-container {
+    display: flex; /* Initially set to flex */
     position: fixed;
-    display: flex; 
     top: 0;
     left: 0;
     width: 100%;
@@ -60,7 +60,10 @@ body::-webkit-scrollbar-thumb:hover {
     -webkit-backdrop-filter: blur( 2px );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     border-bottom: 1.5px solid #44891c;
-  }
+
+}
+
+
 
   .menu-logo {
     line-height: 0;
@@ -689,7 +692,7 @@ body::-webkit-scrollbar-thumb:hover {
         display: none;
     }
     #about {
-        height: auto; 
+        height: 100vh; 
         width: auto;
     }
     #categ{
@@ -706,7 +709,8 @@ body::-webkit-scrollbar-thumb:hover {
         height: auto;
     }
     .abt-container{
-        height: auto;
+        padding-top: 3rem;
+        height: 100vh;
     }
     .aboutus h2,
     .aboutus p{

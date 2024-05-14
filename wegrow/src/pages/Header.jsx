@@ -2,7 +2,7 @@ import React from 'react';
 import projectLogo from '../imgs/favicon.ico';
 import '../styles/wegrow.css'
 
-function Header() {
+function Header() { 
     return (
       <nav className="menu-container">
         <a href="#main-content" className="menu-logo">
