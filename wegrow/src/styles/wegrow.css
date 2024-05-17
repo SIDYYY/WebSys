@@ -5,6 +5,43 @@
     --text-width: calc(100% - 40px);
     --text-scale: 1750 / 1900;
 }
+@keyframes bounce {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-5px);
+    }
+}
+.menu-logo img:hover{
+    animation: bounce 300ms alternate infinite;
+}
+@keyframes grow-shrink {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }    
+}
+.nav-btn #abt:hover{
+    animation: grow-shrink 2000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#ctc:hover{
+    animation: grow-shrink 2000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#ctg:hover{
+    animation: grow-shrink 2000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
 
 *, top-page{
     margin: 0;
@@ -103,6 +140,7 @@ body::-webkit-scrollbar-thumb:hover {
     text-decoration: none;
     color: #f9f5c3;
     transition: color 0.3s ease;
+    
   }
   
   .menu-container a:not(.menu-logo):hover {
@@ -170,7 +208,7 @@ body::-webkit-scrollbar-thumb:hover {
   .menu li {
     padding: 10px 0px;
     font-size: 15px;
-    margin: auto;
+    margin: auto
   } 
 
 #main-content {
@@ -691,7 +729,7 @@ body::-webkit-scrollbar-thumb:hover {
     
     .menu-logo {
       position: absolute;
-      left: 10px;
+      left: -100px;
       top: 50%;
       width: 50%;
       transform: translateY(-50%);
@@ -706,22 +744,30 @@ body::-webkit-scrollbar-thumb:hover {
       position: absolute;
       box-sizing: border-box;
       width: 300px;
-      right: -400px;
+      right: -380px;
       top: 0;
       margin: -20px;
-      padding: 75px 50px 50px;
-      background: #FFF67E;
+      padding: 75px 50px 20px;
+      background: #1d8c1d;
       -webkit-font-smoothing: antialiased;
       transform-origin: 0% 0%;
       transform: translateX(0%);
       transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     }
+    .menu li:hover{
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+    .menu li{
+        margin-right: 7.2rem;
+    }
+    
     .menu-container a{
-        color: black;
+        color: rgb(255, 255, 255);
     }
   
     .menu-container input:checked ~ .menu {
-      transform: translateX(-100%);
+      transform: translateX(-90%);
     }
     .intro{
         width: auto;

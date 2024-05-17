@@ -17,27 +17,35 @@
 .category__list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 1rem 0;
 }
 
 .category__list li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 5px;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: #45a049;
 }
 
 .category__list li:last-child {
   margin-right: 0;
 }
+.category__list li:first-child{
+  margin-right: 3.5rem;
+  background-color: rgb(68, 68, 68);
+}
 
 .category__list li a {
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .category__list li a:hover {
-  color: #4caf50;
+  color: #f7f7f7;
+  opacity: 0.8;
 }
 
 
@@ -187,10 +195,12 @@
   
 .section__subheader {
     margin-bottom: 0.5rem;
+    margin: auto;
     position: relative;
     font-weight: 500;
     letter-spacing: 2px;
     color: var(--text-dark);
+    font-size: 25px;
 }
   
 
@@ -198,6 +208,7 @@
 .section__header {
     max-width: 600px;
     margin-bottom: 1rem;
+    margin: auto;
     font-size: 2.5rem;
     font-weight: 600;
     line-height: 3rem;
@@ -237,6 +248,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-attachment: fixed;
+    text-align: center;
   } 
 
 
