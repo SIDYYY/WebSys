@@ -1,12 +1,11 @@
 import React from 'react';
-import resizingimage from '../imgs/spinach-salad.jpg';
 import '../styles/wegrow.css'
 
 
 function Contact() {
   return (
-      <footer id="contacts">
-        <div className="footer-container">
+      <footer id="contacts" className='section'>
+        <div className="footer-container ">
           <div className="contact-us">
             <h3>Contact Us</h3>
             <p>Email: wegrow@gmail.com</p>

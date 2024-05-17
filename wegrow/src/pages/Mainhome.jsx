@@ -1,12 +1,12 @@
 import React from 'react';
-import projectLogo from '../imgs/favicon.ico';
 import '../styles/wegrow.css'
 
 function Home() {
   return (
-    <main id="main-content">
+    
+<main id="main-content" className='main-content'>
         
-		<div class="intro">
+		<div className="intro">
             <h2> Welcome to We-GROW </h2>
 
 			<p>Your gateway to healthy recipes! Join us on a journey 
@@ -15,9 +15,12 @@ function Home() {
 				 that will inspire and delight your taste buds.
 
 			</p>
-
-			<button ><a href="#categ"> Enter Culinary World	</a></button>	 
+			
+			<div className="nav-btn">
+			<button id='abt'><a href="#about"> Learn more About US	</a></button>
+			</div>
 		</div>
+		
     </main>
 
   );

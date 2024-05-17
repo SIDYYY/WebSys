@@ -5,9 +5,9 @@ import '../styles/wegrow.css'
 
 function About() {
   return (
-    <div id="about">
+    <div id="about" className='section'>
 			<div class="abt-container">
-				<div class="holder">
+				<div class="holder reveal">
 			<div class="aboutus">
 			
 				<div class="content">
@@ -21,7 +21,10 @@ function About() {
 				 We curate recipes and resources that inspire healthy choices 
 				 and foster a sense of community.
 				</p>
-				<button class="contact-btn"><a href="#contacts"> CONTACT US </a></button>
+				<div className="btn-container">
+				<button class="contact-btn" id='ctc'><a href="#contact"> CONTACT US </a></button>
+				<button class="contact-btn" id='ctg'><a href="#categ"> Explore our Recipes	</a></button>
+				</div>
 				</div>	
 				</div>
 				<div class="img-holder">

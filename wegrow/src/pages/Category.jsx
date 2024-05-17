@@ -33,7 +33,7 @@ function Category() {
   return (
     <div id="categ">
       <h1 className="cat">Category</h1>
-      <div className="category-container">
+      <div className="category-container reveal">
         <div className="categories food">
           <h2>Food</h2>
           <div className="image-container">
