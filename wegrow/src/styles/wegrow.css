@@ -42,6 +42,12 @@
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+#tab-desk-ctg{
+    display: block;
+}
+#mobile-ctg{
+    display: none;
+}
 
 *, top-page{
     margin: 0;
@@ -75,16 +81,38 @@ body::-webkit-scrollbar-thumb:hover {
 .top-page{
     font-family: sans-serif;
 }
-.reveal{
+.reveal {
     position: relative;
     transform: translateY(50px);
     opacity: 0;
     transition: all 1.5s ease;
 }
-.reveal.active{
+
+.reveal {
+    position: relative;
+    transform: translateY(120px);
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+.reveal.active {
     transform: translateY(0px);
     opacity: 1;
 }
+
+.disappear {
+    position: relative;
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all 1.5s ease;
+}
+
+.disappear.gone {
+    transform: translateY(150px);
+    opacity: 0;
+}
+
+
 
   
 .menu-container {
@@ -289,7 +317,10 @@ body::-webkit-scrollbar-thumb:hover {
 
 
 #about{
-    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
     height: 100vh;
     text-align: center;
     background-image: url("../imgs/photo-1556911220-e15b29be8c8f.avif");
@@ -625,7 +656,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .team-member {
     text-align: center; 
-    max-width: 250px;
+    max-width: 280px;
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
@@ -688,6 +719,7 @@ body::-webkit-scrollbar-thumb:hover {
   
     .menu-logo img {
       max-height: 100px;
+      margin-left: 50px;
     }
   
     .menu {
@@ -698,7 +730,12 @@ body::-webkit-scrollbar-thumb:hover {
       top: 0;
       margin: -20px;
       padding: 75px 50px 20px;
-      background: #1d8c1d;
+      background: rgba( 15, 82, 15, 0.45 );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur( 4px );
+      -webkit-backdrop-filter: blur( 4px );
+      border-radius: 10px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
       -webkit-font-smoothing: antialiased;
       transform-origin: 0% 0%;
       transform: translateX(0%);
@@ -707,10 +744,14 @@ body::-webkit-scrollbar-thumb:hover {
     .menu li:hover{
         border-top: 1px solid white;
         border-bottom: 1px solid white;
+        background-color: #44891c;
+        border-radius: 3px;
     }
+    
     .menu li{
         margin-right: 7.2rem;
     }
+    
     
     .menu-container a{
         color: rgb(255, 255, 255);
@@ -741,9 +782,16 @@ body::-webkit-scrollbar-thumb:hover {
     }
     
     .aboutus{
-        width: 90%;
+        width: 100%;
         margin-top: 15px;
-        margin: auto;
+        height: auto;
+        margin: auto ;
+    }
+    #mobile-ctg{
+        display: block;
+    }
+    #tab-desk-ctg   {
+        display: none;
     }
     .holder{
         padding-top: 4rem;
@@ -753,6 +801,7 @@ body::-webkit-scrollbar-thumb:hover {
         padding-top: 3rem;
         height: 100vh;
     }
+    
     .aboutus h2,
     .aboutus p{
         padding-top: 10px;
@@ -771,9 +820,10 @@ body::-webkit-scrollbar-thumb:hover {
     .team-members{
         width: auto;
         height: auto;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 20px;
     }
     .team-member{
         width: auto;
@@ -797,7 +847,8 @@ body::-webkit-scrollbar-thumb:hover {
         text-align: center;
     }
     .contact-btn{
-        margin: 50px 10px;
+        margin: 50px auto;
+        width: 100%;
     }
     .footer-container {
         flex-direction: column;
@@ -821,7 +872,7 @@ body::-webkit-scrollbar-thumb:hover {
         display: flex;
         flex-direction: column;
     }
-    .intro #ctg{
+    .intro #mobile-ctg{
         margin-right:0px ;
         padding: 12px;
     }
@@ -833,6 +884,7 @@ body::-webkit-scrollbar-thumb:hover {
     .intro #abt a{
         color: white;
     }
+    
     
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) { 
@@ -940,7 +992,7 @@ body::-webkit-scrollbar-thumb:hover {
         width:100% ; 
     }
     #contacts{
-        padding-top: 100px;
+        padding-top: 20px;
         text-align: center;
     }
     .contact-form{

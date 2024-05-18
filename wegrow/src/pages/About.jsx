@@ -23,12 +23,14 @@ function About() {
 				</p>
 				<div className="btn-container">
 				<button class="contact-btn" id='ctc'><a href="#contact"> CONTACT US </a></button>
-				<button class="contact-btn" id='ctg'><a href="#categ"> Explore our Recipes	</a></button>
+				<button class="contact-btn" id='tab-desk-ctg'><a href="#categ">  Explore our Recipes	</a></button>
+				<button class="contact-btn" id='mobile-ctg'><a href="#categ">  Our Recipes	</a></button>
+
 				</div>
 				</div>	
 				</div>
 				<div class="img-holder">
-					<img src={resizingimage} alt="image" class="changing-img"/>
+					<img src={resizingimage} alt="pic" class="changing-img"/>
 				</div>
 			</div>
 		</div>
