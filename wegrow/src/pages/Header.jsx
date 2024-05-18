@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import projectLogo from '../imgs/favicon.ico';
-import '../styles/wegrow.css';
+import '../styles/wegrow.css'
 
 function Header() {
   useEffect(() => {
@@ -46,7 +46,7 @@ function Header() {
       <div className="menu">
         <ul>
           <li><a href="#main-content"><i className="fas fa-home"></i> Home</a></li>
-          <li><a href="#about"><i className="fas fa-info-circle"></i> About Us</a></li>
+          <li><a href="#abouts"><i className="fas fa-info-circle"></i> About Us</a></li>
           <li><a href="#categ"><i className="fas fa-book-open"></i> Category</a></li>
           <li><a href="#contact"><i className="fas fa-envelope"></i> Contact</a></li>
         </ul>

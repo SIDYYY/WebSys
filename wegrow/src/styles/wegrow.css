@@ -42,7 +42,13 @@
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-#tab-desk-ctg{
+#abt:hover{
+    animation: grow-shrink 2000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#desktop-ctg{
     display: block;
 }
 #mobile-ctg{
@@ -79,18 +85,14 @@ body::-webkit-scrollbar-thumb:hover {
     margin: 0;
 }
 .top-page{
-    font-family: sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: white;
 }
-.reveal {
-    position: relative;
-    transform: translateY(50px);
-    opacity: 0;
-    transition: all 1.5s ease;
-}
+
 
 .reveal {
     position: relative;
-    transform: translateY(120px);
+    transform: translateY(50px);
     opacity: 0;
     transition: all 1.5s ease;
 }
@@ -300,7 +302,8 @@ body::-webkit-scrollbar-thumb:hover {
   align-items: center;
   justify-content: center;
   height: 100%; /* Make the image container full height */
-    z-index: 999;
+  z-index: 999;
+  margin-right:80px;
 }
 
 .intro-image img {
@@ -316,103 +319,84 @@ body::-webkit-scrollbar-thumb:hover {
 
 
 
-#about{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    height: 100vh;
-    text-align: center;
-    background-image: url("../imgs/photo-1556911220-e15b29be8c8f.avif");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-.abt-container{
-    background: rgba( 255, 255, 255, 0.4 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 11.5px );
-    -webkit-backdrop-filter: blur( 11.5px );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    display: inline-block;
-    width: 100%;
-    height: 100vh;
-
-}
-
-.aboutus{
-    margin: 0 0 0 60px;
-    display: flex;
-    width: 40%;
-    background: rgba( 255, 255, 255, 0.5 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 ); 
-    padding: 20px; 
-    text-align: start;
-    height: auto;
-}
-.holder{
-    display: flex;
-    padding-top: 3.5rem;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-.img-holder{
+#abouts {
     display: grid;
-    justify-content: center;
     align-items: center;
-    margin: auto;
-    aspect-ratio: 1;
-    border-radius: 30% 70% 56% 44% / 30% 46% 54% 70% ;   
-
-}
-.aboutus img{
-    width: 25%;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(255, 255, 255);
     height: auto;
-    border-radius: 30% 70% 56% 44% / 30% 46% 54% 70% ;   
+    width: auto;
+    border-bottom-right-radius: 200px;
+  }
+  .abt-head {
+    border: 2px solid #1d8c1d;
+    border-radius: 100px;
+    display: inline-block;
+    margin-top: 6.8rem;
+    padding: 1.3rem 1rem 0rem 1rem;
+    
+  }
+  
+  .abt-head h1 {
+    color: rgb(52, 52, 52);
+    font-weight: bolder;
+    font-size: 50px;
+    padding-bottom: 20px;
+    display: inline-flex;
+  }
+  
+  .abt-welcome, .abt-mission {
+    margin:3.4rem auto;
+    text-align: start;
+    width: 90%;
+    height: auto;
+  }
+  
+  .abt-welcome h2, .abt-mission h2 {
+    font-size: 35px;
+  }
+  
+  .abt-welcome p, .abt-mission p {
+    margin-top: 2rem;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  
+  .img-holder {
+    text-align: center;
     display: flex;
-}
-.aboutus h2, 
-.aboutus p{
-    padding-top: 10px;
-    margin-left: 5px;
-}
-.aboutus p{
-    margin-bottom: 3px;
-    font-size: 15px;
-    font-weight: bolder;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.aboutus h2{
-    margin-top: 3px;
-    font-size: 23px;
-    color: #1d8c1d;
-    font-weight: bolder;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.contact-btn a{
-    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .img-holder img {
+    max-width: 100%;
+    height: auto;
+    width: 60%;
+    border-radius: 53% 47% 100% 0% / 64% 68% 32% 36%  ;
+    transition: 1s ease;
+    border: 2px solid rgb(50, 157, 50);
+  }
+  .img-holder img:hover{
+    transform: scale(1.2);
+  }
+  .contact-btn a{
+    padding: 10px;
     text-decoration: none;
-    color: white;
-    background-color: #1d8c1d;
-    border: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
     border-radius: 50px;
     font-weight: bolder;
     text-align: center;
     margin: auto;
+    font-size: 18px;
 }
-.btn-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
+#abt a{
+    padding: 15px;
+    border-radius: 30px;
+    background-color: #1d8c1d;
+    color: white;
 }
 .contact-btn{
     flex-direction: row;
@@ -423,41 +407,7 @@ body::-webkit-scrollbar-thumb:hover {
     text-align: center;
     background-color: transparent;
 }
-.contact-btn a{
-    text-transform: uppercase;
 
-}
-.changing-img{
-    border-radius: 100% 0% 73% 27% / 37% 41% 59% 63%  ;
-    -moz-border-radius: 153px 18px 166px 131px;
-    border: 4px groove #7fe390;
-    
-}
-.img-holder {
-    position: relative;
-    width: 500px;
-    height: auto;
-    overflow: hidden;
-    border-radius: 100% 0% 73% 27% / 37% 41% 59% 63%  ;
-    -moz-border-radius: 153px 18px 166px 131px;
-    border: 4px groove #7fe390;    
-  }
-
-  .img-holder img {
-    width: 100%;
-    height: 100%;
-    transition: transform 0.3s ease;
-    border-radius: 100% 0% 73% 27% / 37% 41% 59% 63%  ;
-    -moz-border-radius: 153px 18px 166px 131px;
-    border: 4px groove #7fe390;
-  }
-
-  .img-holder:hover img {
-    transform: scale(1.1);
-    border-radius: 100% 0% 73% 27% / 37% 41% 59% 63%  ;
-    -moz-border-radius: 153px 18px 166px 131px;
-    border: 4px groove #7fe390;
-  }
 
   .footer {
     height: 10vh;
@@ -486,7 +436,8 @@ body::-webkit-scrollbar-thumb:hover {
     flex-direction: column;
     align-items: center; 
     justify-content: center;
-    
+    border-bottom-left-radius: 200px;
+    border-top-right-radius: 200px;
 }
 
 .categories {
@@ -503,9 +454,8 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 50px;
     margin-top: 20px;
     margin-bottom: 30px;
-    color: #1d8c1d;
+    color: #44891c;
     padding: 40px 20px 10px 20px;
-    border-bottom: 5px solid #474747;
 }
 
 .category-container {
@@ -638,6 +588,7 @@ body::-webkit-scrollbar-thumb:hover {
     text-align: center; 
     padding-bottom: 50px;
     height: auto;
+    border-top-left-radius: 200px;
 }
 .team h3{
     padding-top: 5.5rem;
@@ -772,51 +723,37 @@ body::-webkit-scrollbar-thumb:hover {
     .img-holder{
         display: none;
     }
-    #about {
-        height: 100vh; 
-        width: auto;
-    }
     #categ{
-        padding-top: 5vh;
         height: auto;
+        border-radius: 0;
     }
-    
-    .aboutus{
-        width: 100%;
-        margin-top: 15px;
-        height: auto;
-        margin: auto ;
-    }
-    #mobile-ctg{
-        display: block;
-    }
-    #tab-desk-ctg   {
-        display: none;
-    }
-    .holder{
-        padding-top: 4rem;
-        height: auto;
-    }
-    .abt-container{
-        padding-top: 3rem;
+    #abouts {
+        grid-template-columns: 1fr;
         height: 100vh;
-    }
+        border-radius: 0;
+      }
     
-    .aboutus h2,
-    .aboutus p{
-        padding-top: 10px;
-        margin-left: 10px;
-    }
-    .aboutus p{
-        font-size: 15px;
-    }
-    .contacts{
-        height: 88vh;
-    }
-    .missionvision p{
-        font-size: 15px;
-    }
+      .abt-head {
+        display: inline-block;
+        border-radius: 0px;
+        margin: 0;
+      }
     
+      .abt-head h1 {
+        font-size: 2.5rem;
+      }
+    
+      .abt-welcome h2, .abt-mission h2 {
+        font-size: 2rem;
+      }
+    
+      .abt-welcome p, .abt-mission p {
+        font-size: 1rem;
+      }
+    
+    .team{
+        border-radius: 0;
+    }
     .team-members{
         width: auto;
         height: auto;
@@ -940,43 +877,39 @@ body::-webkit-scrollbar-thumb:hover {
     .missionvision{
         width: 90%;
     }
-    
-    .abt-container{
-        height: 100vh;
-    }
     .img-holder{
         display: none;
     }
-    #about {
-        width: 100vw;
-        height: 100vh;
-    }
+    
     #categ{
         padding-top: 5%;
         height: 100vh;
         width: 100vw;
+        border-radius: 0;
     }
-    .aboutus{
-        width: 90%;
-        margin-top: 15px;
-        margin: auto;
+    #abouts {
+        grid-template-columns: 1fr;
+        border-radius: 0;
+        height: 100vh;
+      }
+    .abt-head{
+        border-radius: 0;
+
     }
-    .holder{
-        padding-top: 5rem;
-    }
-    .aboutus h2,
-    .aboutus p{
-        padding-top: 10px;
-        margin-left: 10px;
-    }
-    .aboutus p{
-        font-size: 15px;
-    }
-    .missionvision p{
-        font-size: 15px;
-    }
+    .abt-head h1 {
+        font-size: 3rem;
+      }
     
+    .abt-welcome h2, .abt-mission h2 {
+        font-size: 2.5rem;
+      }
     
+    .abt-welcome p, .abt-mission p {
+        font-size: 1.25rem;
+      }
+    .team{
+        border-radius: 0;
+      }
     .team-member{
         width: 100%;
     }
@@ -1078,4 +1011,8 @@ body::-webkit-scrollbar-thumb:hover {
         height: 100vh; 
         width: 100vw;
     }
+    .abt-holder{
+        height: auto  ;
+    }
   }
+  

@@ -32,7 +32,9 @@ function Category() {
 
   return (
     <div id="categ">
-      <h1 className="cat">Category</h1>
+      <div className="ctg-head">
+      <h1 className="cat">CATEGORY</h1>
+      </div>
       <div className="category-container reveal">
         <div className="categories food">
           <h2>Food</h2>

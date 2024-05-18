@@ -1,5 +1,5 @@
 import './styles/wegrow.css';
-import './styles/food.css';
+import './styles/food.css'; 
 import Header from './pages/Header';
 import Home from './pages/Mainhome';
 import Category from './pages/Category';
@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Header />
-        <Home />
+      <Home />
       <Qoutes />
       <About />
       <Category/>
