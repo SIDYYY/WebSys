@@ -23,6 +23,7 @@ function Drink() {
   };
 
   return (
+    <div className="holder">
     <section className="section__container category__container">
       <p className="section__subheader">WE GROW <span><i className="ri-leaf-fill"></i></span></p>
       <h2 className="section__header">Drink - Category</h2>
@@ -138,6 +139,7 @@ function Drink() {
 
       </div>
     </section>
+    </div>
   );
 }
 

@@ -84,9 +84,11 @@ body::-webkit-scrollbar-thumb:hover {
     padding: 0;
     margin: 0;
 }
-.top-page{
+
+#lawas{
     font-family:Arial, Helvetica, sans-serif;
-    background-color: white;
+    background: #1d8c1d;
+
 }
 
 
@@ -126,18 +128,13 @@ body::-webkit-scrollbar-thumb:hover {
     align-items: center;
     justify-content: center;
     color: #000000;
+    background-color: whitesmoke;
     padding: 15px;
     z-index: 1000;
     -webkit-user-select: none;
     user-select: none;
     box-sizing: border-box;
     transition: opacity 0.5s ease-in-out;
-    background: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 2px );
-    -webkit-backdrop-filter: blur( 2px );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    border-bottom: 1.5px solid #44891c;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -307,9 +304,9 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .intro-image img {
-  width:90%;
+  width:100%;
   border-radius: 100%;
-  height: 70%;
+  height: auto;
   object-fit: cover;
   object-position: center; /* Adjust this to focus on the plate */
   transition: 0.8s ease;
@@ -325,23 +322,33 @@ body::-webkit-scrollbar-thumb:hover {
     justify-content: center;
     grid-template-columns: 1fr 1fr;
     background-color: rgb(255, 255, 255);
-    height: auto;
+    height: 100vh;
     width: auto;
-    border-bottom-right-radius: 200px;
+    border-top-right-radius: 500px;
   }
+  .hug{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
   .abt-head {
-    border: 2px solid #1d8c1d;
-    border-radius: 100px;
+    border-bottom: 2px solid #44891c;
+    border-right: 2px solid #44891c;
+    border-bottom-right-radius: 50px;
     display: inline-block;
     margin-top: 6.8rem;
+    margin: auto;
     padding: 1.3rem 1rem 0rem 1rem;
+    width: 100%;
+    
     
   }
   
   .abt-head h1 {
     color: rgb(52, 52, 52);
     font-weight: bolder;
-    font-size: 50px;
+    font-size: 45px;
     padding-bottom: 20px;
     display: inline-flex;
   }
@@ -352,14 +359,21 @@ body::-webkit-scrollbar-thumb:hover {
     width: 90%;
     height: auto;
   }
+  .abt-welcome{
+    margin-bottom: 0rem;
+  }
   
   .abt-welcome h2, .abt-mission h2 {
-    font-size: 35px;
+    font-size: 37px;
+    color: #1d8c1d;
+  }
+  .abt-mission h2{
+    text-align: center;
   }
   
   .abt-welcome p, .abt-mission p {
     margin-top: 2rem;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: lighter;
   }
   
@@ -373,7 +387,7 @@ body::-webkit-scrollbar-thumb:hover {
   .img-holder img {
     max-width: 100%;
     height: auto;
-    width: 60%;
+    width: 65%;
     border-radius: 53% 47% 100% 0% / 64% 68% 32% 36%  ;
     transition: 1s ease;
     border: 2px solid rgb(50, 157, 50);
@@ -425,19 +439,19 @@ body::-webkit-scrollbar-thumb:hover {
   }
   
 #categ {
-    background-image: url("../imgs/photo-1495195129352-aeb325a55b65.avif");
+    background-color: white;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
     width: 100vw;
+    margin: auto;
     display: flex; 
     flex-direction: column;
     align-items: center; 
     justify-content: center;
-    border-bottom-left-radius: 200px;
-    border-top-right-radius: 200px;
+    
 }
 
 .categories {
@@ -451,11 +465,24 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .cat {
-    font-size: 50px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    color: #44891c;
-    padding: 40px 20px 10px 20px;
+  border-left: 2px solid #44891c;
+  border-right: 2px solid #44891c;
+  border-bottom: 2px solid #44891c;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  display: inline-block;
+  margin-top: 6.8rem;
+  margin-bottom: 5rem;
+  padding: 1.3rem 1rem 0rem 1rem;
+  width: 100%;
+}
+
+.cat h1 {
+  color: rgb(52, 52, 52);
+  font-weight: bolder;
+  font-size: 45px;
+  padding-bottom: 20px;
+  display: inline-flex;
 }
 
 .category-container {
@@ -528,8 +555,6 @@ body::-webkit-scrollbar-thumb:hover {
     color: #fff;
     padding: 20px 0;
     height: auto;
-
-
 }
 
 
@@ -580,7 +605,7 @@ body::-webkit-scrollbar-thumb:hover {
     opacity: 0.8;
 }
 .team {
-    background-image: url("../imgs/photo-1505935428862-770b6f24f629.avif");
+    background-color: white;
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -588,15 +613,26 @@ body::-webkit-scrollbar-thumb:hover {
     text-align: center; 
     padding-bottom: 50px;
     height: auto;
-    border-top-left-radius: 200px;
 }
-.team h3{
-    padding-top: 5.5rem;
-    font-size: 40px;
-    font-weight: bolder;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:#474747;
+.tm {
+  border-left: 5px solid #44891c;
+  border-right: 5px solid #44891c;
+  display: inline-block;
+  margin-top: 6.8rem;
+  padding: 1.3rem 1rem 0rem 1rem;
+  width: 40%;
+  
+  
 }
+
+.tm h3 {
+  color: rgb(52, 52, 52);
+  font-weight: bolder;
+  font-size: 40px;
+  padding-bottom: 20px;
+  display: inline-flex;
+}
+
 
 .team-members {
     display: flex;
@@ -648,7 +684,7 @@ body::-webkit-scrollbar-thumb:hover {
     margin: 20px 0;
   }
   
-  @media (min-width: 300px) and (max-width: 767px) {
+  @media (min-width: 300px) and (max-width: 379px) {
     body{
         padding: 0;
         margin: 0;
@@ -725,34 +761,73 @@ body::-webkit-scrollbar-thumb:hover {
     }
     #categ{
         height: auto;
+        width: 100vw;
         border-radius: 0;
+    }
+    .cat {
+      display: inline-block;
+      border-radius: 0px;
+      margin: auto;
+      padding-top: 6rem;
+      width: 1200px;
+      background-color: #44891c;
+    }
+  
+    .cat h1 {
+      font-size: 2rem;
+      color: rgb(255, 255, 255);
     }
     #abouts {
         grid-template-columns: 1fr;
-        height: 100vh;
+        height: auto;
         border-radius: 0;
       }
+
     
       .abt-head {
         display: inline-block;
         border-radius: 0px;
         margin: 0;
+        padding-top: 5rem;
+        width: 100%;
+        background-color: #44891c;
       }
     
       .abt-head h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        color: rgb(255, 255, 255);
       }
     
       .abt-welcome h2, .abt-mission h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        padding-top: 0rem;
+        text-align: center;
       }
     
       .abt-welcome p, .abt-mission p {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+        text-align: center;
       }
-    
+      .abt-mission {
+        padding-bottom: 3.5rem;
+      }
     .team{
         border-radius: 0;
+        margin: auto;
+    } 
+    .tm {
+      display: inline-block;
+      border-radius: 0px;
+      margin: auto;
+      padding-top: 6rem;
+      width: 100%;
+      background-color: #44891c;
+    }
+  
+    .tm h3 {
+      font-size: 2rem;
+      color: rgb(255, 255, 255);
     }
     .team-members{
         width: auto;
@@ -787,6 +862,13 @@ body::-webkit-scrollbar-thumb:hover {
         margin: 50px auto;
         width: 100%;
     }
+    .contact-btn a{
+      font-size: 15px;
+  }
+    #abt a{
+      padding: 15px;
+    }
+
     .footer-container {
         flex-direction: column;
         align-items: center;
@@ -821,8 +903,243 @@ body::-webkit-scrollbar-thumb:hover {
     .intro #abt a{
         color: white;
     }
+    .intro-text h1{
+      font-size: 2.5rem;
+    }
+    .intro-text p{
+      font-size: 1rem;
+    }
     
-    
+}
+@media (min-width: 380px) and (max-width: 767px) {
+  body{
+      padding: 0;
+      margin: 0;
+  } 
+  .menu-container {
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+  }
+  
+  .menu-logo {
+    position: absolute;
+    left: -100px;
+    top: 50%;
+    width: 50%;
+    transform: translateY(-50%);
+    display: block;
+  }
+
+  .menu-logo img {
+    max-height: 100px;
+    margin-left: 50px;
+  }
+
+  .menu {
+    position: absolute;
+    box-sizing: border-box;
+    width: 300px;
+    right: -380px;
+    top: 0;
+    margin: -20px;
+    padding: 75px 50px 20px;
+    background: rgba( 15, 82, 15, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translateX(0%);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  .menu li:hover{
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+      background-color: #44891c;
+      border-radius: 3px;
+  }
+  
+  .menu li{
+      margin-right: 7.2rem;
+  }
+  
+  
+  .menu-container a{
+      color: rgb(255, 255, 255);
+  }
+
+  .menu-container input:checked ~ .menu {
+    transform: translateX(-90%);
+  }
+  .intro-image{
+      display: none;
+  }
+  .intro-grid{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+  }
+  .img-holder{
+      display: none;
+  }
+  #categ{
+      height: auto;
+      width: 100vw;
+      border-radius: 0;
+  }
+  .cat {
+    display: inline-block;
+    border-radius: 0px;
+    margin: auto;
+    padding-top: 6rem;
+    width: 1200px;
+    background-color: #44891c;
+  }
+
+  .cat h1 {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+  }
+  #abouts {
+      grid-template-columns: 1fr;
+      height: auto;
+      border-radius: 0;
+    }
+    .hug{
+      height: 100vh;
+    }
+
+  
+    .abt-head {
+      display: inline-block;
+      border-radius: 0px;
+      margin: 0;
+      padding-top: 5rem;
+      width: 100%;
+      background-color: #44891c;
+    }
+  
+    .abt-head h1 {
+      font-size: 2rem;
+      color: rgb(255, 255, 255);
+    }
+  
+    .abt-welcome h2, .abt-mission h2 {
+      font-size: 1.8rem;
+      padding-top: 0rem;
+      text-align: center;
+    }
+  
+    .abt-welcome p, .abt-mission p {
+      font-size: 1.2rem;
+      padding-bottom: 1rem;
+      text-align: center;
+    }
+    .abt-mission {
+      padding-bottom: 3.5rem;
+    }
+  .team{
+      border-radius: 0;
+      margin: auto;
+  } 
+  .tm {
+    display: inline-block;
+    border-radius: 0px;
+    margin: auto;
+    padding-top: 6rem;
+    width: 100%;
+    background-color: #44891c;
+  }
+
+  .tm h3 {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+  }
+  .team-members{
+      width: auto;
+      height: auto;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+  }
+  .team-member{
+      width: auto;
+      height: auto;    
+  }
+  .category-container {
+          display: flex; 
+          flex-wrap: wrap; 
+          justify-content: center; 
+          gap: 10px;
+          margin: 2rem auto auto auto; 
+          align-items: center;
+          text-align: center;
+  }
+
+  .categories {
+      width:290px;
+  }
+  #contacts{
+      padding-top: 30px;
+      text-align: center;
+  }
+  .contact-btn{
+      margin: 50px auto;
+      width: 100%;
+  }
+  .contact-btn a{
+    font-size: 15px;
+}
+  #abt a{
+    padding: 15px;
+  }
+
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .contact-us, .social-media, .contact-form {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .social-media ul {
+      justify-content: center;
+      margin: auto;
+  }
+
+  .social-media li {
+      margin-right: 10px;
+  }
+  .nav-btn{
+      display: flex;
+      flex-direction: column;
+  }
+  .intro #mobile-ctg{
+      margin-right:0px ;
+      padding: 12px;
+  }
+  .intro #abt{
+      margin-left: 0px;
+      padding: 15px;
+      background-color:#1d8c1d;
+  }
+  .intro #abt a{
+      color: white;
+  }
+  .intro-text h1{
+    font-size: 2.5rem;
+  }
+  .intro-text p{
+    font-size: 1rem;
+  }
+  
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) { 
     body {
@@ -882,33 +1199,66 @@ body::-webkit-scrollbar-thumb:hover {
     }
     
     #categ{
-        padding-top: 5%;
         height: 100vh;
-        width: 100vw;
+        width: 100dvw;
         border-radius: 0;
+    }
+    .cat {
+      display: inline-block;
+      border-radius: 0px;
+      margin: auto;
+      margin-bottom: 7rem;
+      padding-top: 7rem;
+      width: 1200px;
+      background-color: #44891c;
+    }
+  
+    .cat h1 {
+      font-size: 2.5rem;
+      color: rgb(255, 255, 255);
     }
     #abouts {
         grid-template-columns: 1fr;
         border-radius: 0;
         height: 100vh;
       }
-    .abt-head{
-        border-radius: 0;
-
-    }
-    .abt-head h1 {
-        font-size: 3rem;
+      .abt-head {
+        display: inline-block;
+        border-radius: 0px;
+        margin: 0;
+        padding-top: 8rem;
+        width: 100%;
+        background-color: #44891c;
+      }
+    
+      .abt-head h1 {
+        font-size: 2.5rem;
+        color: rgb(255, 255, 255);
       }
     
     .abt-welcome h2, .abt-mission h2 {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
+        text-align: center;
       }
     
     .abt-welcome p, .abt-mission p {
-        font-size: 1.25rem;
+        font-size: 1.35rem;
       }
     .team{
         border-radius: 0;
+      }
+      .tm {
+        display: inline-block;
+        border-radius: 0px;
+        margin: auto;
+        padding-top: 8rem;
+        width: 100%;
+        background-color: #44891c;
+      }
+    
+      .tm h3 {
+        font-size: 2.5rem;
+        color: rgb(255, 255, 255);
       }
     .team-member{
         width: 100%;

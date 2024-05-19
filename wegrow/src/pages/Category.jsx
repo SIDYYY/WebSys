@@ -33,15 +33,17 @@ function Category() {
   return (
     <div id="categ">
       <div className="ctg-head">
-      <h1 className="cat">CATEGORY</h1>
+        <div className="cat ">
+      <h1>Category || We-GROW</h1>
       </div>
-      <div className="category-container reveal">
+      </div>
+      <div className="category-container reveal disappear">
         <div className="categories food">
           <h2>Food</h2>
           <div className="image-container">
             <img src={foodImages[foodIndex]} alt="Food" className="food-image" />
           </div>
-          {/* Use Link to navigate to the food category page */}
+          {/* Use Link to navigate to the food  */}
           <button className="ctg-button"><Link to="/food">MORE RECIPES</Link></button>
         </div>
         <div className="categories dessert">
@@ -49,7 +51,7 @@ function Category() {
           <div className="image-container">
             <img src={dessertImages[dessertIndex]} alt="Dessert" className="dessert-image" />
           </div>
-          {/* Use Link to navigate to the dessert category page */}
+          {/* Use Link to navigate to the dessert */}
           <button className="ctg-button"><Link to="/dessert">MORE RECIPES</Link></button>
         </div>
         <div className="categories drinks">
@@ -57,7 +59,7 @@ function Category() {
           <div className="image-container">
             <img src={drinksImages[drinksIndex]} alt="Drinks" className="drinks-image" />
           </div>
-          {/* Use Link to navigate to the drinks category page */}
+          {/* Use Link to navigate to the drinks  */}
           <button className="ctg-button"><Link to="/drinks">MORE RECIPES</Link></button>
         </div>
       </div>

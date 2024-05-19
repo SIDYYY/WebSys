@@ -23,6 +23,7 @@ function Food() {
   };
 
   return (
+    <div className="holder">
     <section className="section__container category__container">
       <p className="section__subheader">WE GROW <span><i className="ri-leaf-fill"></i></span></p>
       <h2 className="section__header">FOOD - Category</h2>
@@ -146,6 +147,7 @@ function Food() {
 
       </div>
     </section>
+    </div>
   );
 }
 

@@ -7,17 +7,19 @@ function About() {
     <div id="abouts">
 		
       <div className="abt-holder reveal">
+        
+        <div className="hug">
         <div className="abt-head">
-          <h1 className="reveal">About - We-GROW</h1>
+          <h1 >About || We-GROW</h1>
         </div>
-        <div className="abt-welcome reveal">
+        <div className="abt-welcome reveal disappear">
           <h2>Welcome to We-GROW</h2>
           <p>
             Your hub for delicious, nutritious recipes and holistic wellness inspiration! We're passionate about making healthy eating a joyous experience for everyone.
             Join our community and discover the power of wholesome food to nourish your body and soul.
           </p>
         </div>
-        <div className="abt-mission reveal">
+        <div className="abt-mission reveal disappear">
           <h2>Our Mission</h2>
           <p>
             At We GROW, we're on a mission to empower individuals to embrace wellness through nourishing food and mindful living.
@@ -25,9 +27,11 @@ function About() {
           </p>
         </div>
       </div>
+      </div>
       <div className="img-holder reveal">
         <img src={resizingimage} alt="We-GROW" />
       </div>
+    
     </div>
   );
 }
