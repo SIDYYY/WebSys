@@ -6,7 +6,7 @@ function About() {
   return (
     <div id="abouts">
 		
-      <div className="abt-holder reveal">
+      <div className="abt-holder ">
         
         <div className="hug">
         <div className="abt-head">

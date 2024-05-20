@@ -38,7 +38,7 @@ function Category() {
       </div>
       </div>
       <div className="category-container reveal disappear">
-        <div className="categories food">
+        <div className="categories food reveal disappear">
           <h2>Food</h2>
           <div className="image-container">
             <img src={foodImages[foodIndex]} alt="Food" className="food-image" />
@@ -46,7 +46,7 @@ function Category() {
           {/* Use Link to navigate to the food  */}
           <button className="ctg-button"><Link to="/food">MORE RECIPES</Link></button>
         </div>
-        <div className="categories dessert">
+        <div className="categories dessert reveal disappear">
           <h2>Dessert</h2>
           <div className="image-container">
             <img src={dessertImages[dessertIndex]} alt="Dessert" className="dessert-image" />
@@ -54,7 +54,7 @@ function Category() {
           {/* Use Link to navigate to the dessert */}
           <button className="ctg-button"><Link to="/dessert">MORE RECIPES</Link></button>
         </div>
-        <div className="categories drinks">
+        <div className="categories drinks reveal disappear">
           <h2>Drinks</h2>
           <div className="image-container">
             <img src={drinksImages[drinksIndex]} alt="Drinks" className="drinks-image" />
