@@ -929,6 +929,7 @@ body::-webkit-scrollbar-thumb:hover {
   .menu-logo {
     position: absolute;
     left: -100px;
+    margin: auto;
     top: 50%;
     width: 50%;
     transform: translateY(-50%);
@@ -937,7 +938,8 @@ body::-webkit-scrollbar-thumb:hover {
 
   .menu-logo img {
     max-height: 100px;
-    margin-left: 50px;
+    margin-left: 5rem;
+    
   }
 
   .menu {
@@ -1040,15 +1042,13 @@ body::-webkit-scrollbar-thumb:hover {
     }
   
     .abt-welcome p, .abt-mission p {
-      font-size: 1.2rem;
+      font-size: 1rem;  
       padding-bottom: 1rem;
       text-align: center;
       width: 80%;
-      margin: auto;
+      margin: 1.5rem auto auto auto;
     }
-    .abt-mission {
-      padding-bottom: 3.5rem;
-    }
+    
   .team{
       border-radius: 0;
       margin: auto;

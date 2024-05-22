@@ -24,8 +24,7 @@
   display: inline-block;
   margin-right: 5px;
   padding: 15px;
-  border-radius: 20px;
-  background-color: #45a049;
+  border-bottom: 3px solid white;
 }
 
 .category__list li:last-child {
@@ -33,13 +32,14 @@
 }
 .category__list li:first-child{
   margin-right: 3.5rem;
-  background-color: rgb(39, 39, 39);
+  border-radius: 2rem;
+  background-color: rgb(255, 255, 255);
 }
 
 
 .category__list li a {
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
   font-weight: bold;
   transition: color 0.3s ease;
 }
@@ -190,7 +190,7 @@
     max-width: var(--max-width);
     margin: auto;
     padding: 3rem 1rem;
-    height: 100vh;
+    height: auto;
   }
 .holder{
   background: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
@@ -198,6 +198,7 @@
     background-size: contain;
     background-attachment: fixed;
     text-align: center;
+    padding-top: 2.5rem;
 }
   
 .section__subheader {
@@ -267,6 +268,19 @@
         align-items: center;
         text-align: center;
     }
+    .category__list li{
+      padding: 7px;
+      border-right: 3px solid white;
+      border-left: 3px solid white;
+      border-bottom: none;
+      background-color: #4caf50;
+    }
+    .category__list  li a{
+      color: white;
+    }
+    .category__list li:first-child a{
+      color: black;
+    }
 
     .card-holder {
         display: flex; 
@@ -285,7 +299,7 @@
         font-size: 15px;
     }
     .show-content ol li {
-        font-size: 11px;
+        font-size: 12.2px;
     }
     .show-content h4 {
         margin: 5px auto;
