@@ -357,7 +357,14 @@ body::-webkit-scrollbar-thumb:hover {
     margin:3.4rem auto;
     text-align: start;
     width: 90%;
+    padding: 20px;
     height: auto;
+    background: rgba( 252, 255, 224, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
   }
   .abt-welcome{
     margin-bottom: 0rem;
@@ -706,7 +713,7 @@ body::-webkit-scrollbar-thumb:hover {
   
     .menu-logo img {
       max-height: 100px;
-      margin-left: 50px;
+      margin-left: 6rem;
     }
   
     .menu {
@@ -1039,6 +1046,7 @@ body::-webkit-scrollbar-thumb:hover {
       font-size: 1.8rem;
       padding-top: 0rem;
       text-align: center;
+      
     }
   
     .abt-welcome p, .abt-mission p {
@@ -1160,6 +1168,9 @@ body::-webkit-scrollbar-thumb:hover {
         left: 0;
         top: 30%;
         width: 35%;
+      }
+      .menu-logo img{
+        margin-left: 8rem;
       }
   
     .menu-container a {
