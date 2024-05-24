@@ -48,12 +48,16 @@
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+#abt a{
+  border: none;
+}
 #desktop-ctg{
     display: block;
 }
 #mobile-ctg{
     display: none;
 }
+
 
 *, top-page{
     margin: 0;
@@ -86,8 +90,12 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 #lawas{
-    font-family:Arial, Helvetica, sans-serif;
-    background: #1d8c1d;
+    background-image: url('../imgs/wave-haikei (3).svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -321,10 +329,10 @@ body::-webkit-scrollbar-thumb:hover {
     align-items: center;
     justify-content: center;
     grid-template-columns: 1fr 1fr;
-    background-color: rgb(255, 255, 255);
     height: auto;
     width: auto;
     border-top-right-radius: 500px;
+    
   }
   .hug{
     height: auto;
@@ -337,18 +345,19 @@ body::-webkit-scrollbar-thumb:hover {
     border-right: 2px solid #44891c;
     border-bottom-right-radius: 50px;
     display: inline-block;
-    margin-top: 6.8rem;
+    margin-top: 10rem;
     margin: auto;
-    padding: 1.3rem 1rem 0rem 1rem;
-    width: 100%;
+    padding: 4rem auto;
+    width: 80%;
     
     
   }
   
   .abt-head h1 {
-    color: rgb(52, 52, 52);
+    color: rgb(120, 120, 120);
     font-weight: bolder;
     font-size: 45px;
+    padding-top: 2.5rem;
     padding-bottom: 20px;
     display: inline-flex;
   }
@@ -359,7 +368,7 @@ body::-webkit-scrollbar-thumb:hover {
     width: 90%;
     padding: 20px;
     height: auto;
-    background: rgba( 252, 255, 224, 0.7 );
+    background: #ffff;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
@@ -446,11 +455,6 @@ body::-webkit-scrollbar-thumb:hover {
   }
   
 #categ {
-    background-color: white;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
     height: 100vh;
     width: 100vw;
     margin: auto;
@@ -480,12 +484,12 @@ body::-webkit-scrollbar-thumb:hover {
   display: inline-block;
   margin-top: 6.8rem;
   margin-bottom: 5rem;
-  padding: 1.3rem 1rem 0rem 1rem;
+  padding: 1.3rem 1.5rem 0rem 1.5rem;
   width: 100%;
 }
 
 .cat h1 {
-  color: rgb(52, 52, 52);
+  color: rgb(96, 96, 96);
   font-weight: bolder;
   font-size: 45px;
   padding-bottom: 20px;
@@ -612,11 +616,6 @@ body::-webkit-scrollbar-thumb:hover {
     opacity: 0.8;
 }
 .team {
-    background-color: white;
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     text-align: center; 
     padding-bottom: 50px;
     height: auto;
@@ -633,9 +632,9 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .tm h3 {
-  color: rgb(52, 52, 52);
+  color: rgb(85, 85, 85);
   font-weight: bolder;
-  font-size: 40px;
+  font-size: 36.5px;
   padding-bottom: 20px;
   display: inline-flex;
 }
@@ -643,9 +642,11 @@ body::-webkit-scrollbar-thumb:hover {
 
 .team-members {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center; 
     gap: 100px; 
-    margin-top: 50px;   
+    margin: 3rem auto auto auto;
+    width: 80%;
 }
 
 .team-member {
@@ -659,6 +660,7 @@ body::-webkit-scrollbar-thumb:hover {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding: 30px;
     width: 100%;
+    margin: 2rem 10px 2rem 10px;
 }
 
 .team-member img {
@@ -696,6 +698,19 @@ body::-webkit-scrollbar-thumb:hover {
         padding: 0;
         margin: 0;
     } 
+    #lawas{
+      background: url('../imgs/blob-scene-haikei (2).svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    .main-content{
+      background: url('../imgs/jason-briscoe-n4ymhyyFY7A-unsplash.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position:-300px;
+    }
     .menu-container {
       flex-direction: column;
       align-items: flex-end;
@@ -781,7 +796,7 @@ body::-webkit-scrollbar-thumb:hover {
     }
   
     .cat h1 {
-      font-size: 2rem;
+      font-size: 30.8px;
       color: rgb(255, 255, 255);
     }
     #abouts {
@@ -799,7 +814,7 @@ body::-webkit-scrollbar-thumb:hover {
         display: inline-block;
         border-radius: 0px;
         margin: 0;
-        padding-top: 5rem;
+        padding-top: 6rem;
         width: 100%;
         background-color: #44891c;
       }
@@ -810,13 +825,13 @@ body::-webkit-scrollbar-thumb:hover {
       }
     
       .abt-welcome h2, .abt-mission h2 {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         padding-top: 0rem;
         text-align: center;
       }
     
       .abt-welcome p, .abt-mission p {
-        font-size: 1.2rem;
+        font-size: 1rem;
         padding-bottom: 1rem;
         text-align: center;
       }
@@ -923,16 +938,30 @@ body::-webkit-scrollbar-thumb:hover {
     
 }
 @media (min-width: 380px) and (max-width: 767px) {
-  body{
-      padding: 0;
-      margin: 0;
-  } 
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  #lawas{
+    background: url('../imgs/blob-scene-haikei (2).svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .main-content{
+    background: url('../imgs/jason-briscoe-n4ymhyyFY7A-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:-300px;
+  }
+
   .menu-container {
     flex-direction: column;
     align-items: flex-end;
     width: 100%;
   }
-  
+
   .menu-logo {
     position: absolute;
     left: -100px;
@@ -946,7 +975,6 @@ body::-webkit-scrollbar-thumb:hover {
   .menu-logo img {
     max-height: 100px;
     margin-left: 5rem;
-    
   }
 
   .menu {
@@ -957,53 +985,57 @@ body::-webkit-scrollbar-thumb:hover {
     top: 0;
     margin: -20px;
     padding: 75px 50px 20px;
-    background: rgba( 15, 82, 15, 0.45 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
+    background: rgba(15, 82, 15, 0.45);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba(255, 255, 255, 0.18);
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
     transform: translateX(0%);
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
   }
-  .menu li:hover{
-      border-top: 1px solid white;
-      border-bottom: 1px solid white;
-      background-color: #44891c;
-      border-radius: 3px;
+
+  .menu li:hover {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    background-color: #44891c;
+    border-radius: 3px;
   }
-  
-  .menu li{
-      margin-right: 7.2rem;
+
+  .menu li {
+    margin-right: 7.2rem;
   }
-  
-  
-  .menu-container a{
-      color: rgb(255, 255, 255);
+
+  .menu-container a {
+    color: rgb(255, 255, 255);
   }
 
   .menu-container input:checked ~ .menu {
     transform: translateX(-90%);
   }
-  .intro-image{
-      display: none;
-  }
-  .intro-grid{
-      display: flex;
-      justify-content: center;
-      align-items: center;
 
+  .intro-image {
+    display: none;
   }
-  .img-holder{
-      display: none;
+
+  .intro-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  #categ{
-      height: auto;
-      width: 100vw;
-      border-radius: 0;
+
+  .img-holder {
+    display: none;
   }
+
+  #categ {
+    height: auto;
+    width: 100vw;
+    border-radius: 0;
+  }
+
   .cat {
     display: inline-block;
     border-radius: 0px;
@@ -1017,50 +1049,59 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 2rem;
     color: rgb(255, 255, 255);
   }
+
   #abouts {
-      grid-template-columns: 1fr;
-      height: auto;
-      border-radius: 0;
-    }
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    border-radius: 0;
+  }
 
-    .abt-holder{
-      height: 100vh;
-    }
 
-  
-    .abt-head {
-      display: inline-block;
-      border-radius: 0px;
-      margin: 0;
-      padding-top: 8rem;
-      width: 100%;
-      background-color: #44891c;
-    }
-  
-    .abt-head h1 {
-      font-size: 2rem;
-      color: rgb(255, 255, 255);
-    }
-  
-    .abt-welcome h2, .abt-mission h2 {
-      font-size: 1.8rem;
-      padding-top: 0rem;
-      text-align: center;
-      
-    }
-  
-    .abt-welcome p, .abt-mission p {
-      font-size: 1rem;  
-      padding-bottom: 1rem;
-      text-align: center;
-      width: 80%;
-      margin: 1.5rem auto auto auto;
-    }
-    
-  .team{
-      border-radius: 0;
-      margin: auto;
-  } 
+  .abt-head {
+    display: inline-block;
+    border-radius: 0px;
+    margin: 0;
+    padding-top: 7.5rem;
+    width: 100%;
+    background-color: #44891c;
+    text-align: center;
+  }
+
+  .abt-head h1 {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+  }
+
+  .abt-welcome {
+    margin: auto;
+    margin-top: 3rem;
+  }
+  .abt-mission{
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .abt-welcome h2, .abt-mission h2 {
+    font-size: 1.8rem;
+    padding-top: 0rem;
+    text-align: center;
+  }
+
+  .abt-welcome p, .abt-mission p {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    width: 80%;
+    margin: 1.2rem auto auto auto;
+  }
+
+  .team {
+    border-radius: 0;
+    margin: auto;
+  }
+
   .tm {
     display: inline-block;
     border-radius: 0px;
@@ -1074,91 +1115,118 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 2rem;
     color: rgb(255, 255, 255);
   }
-  .team-members{
-      width: auto;
-      height: auto;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
+
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 2rem auto auto auto;
+    align-items: center;
+    text-align: center;
   }
-  .team-member{
-      width: auto;
-      height: auto;    
+  
+
+  .team-member {
+    width: auto;
+    height: auto;
   }
+  .team-member p{
+    font-size: 0.9rem;
+  }
+  .team-member h4{
+    font-size: 1rem;
+  }
+
   .category-container {
-          display: flex; 
-          flex-wrap: wrap; 
-          justify-content: center; 
-          gap: 10px;
-          margin: 2rem auto auto auto; 
-          align-items: center;
-          text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 2rem auto auto auto;
+    align-items: center;
+    text-align: center;
   }
 
   .categories {
-      width:290px;
+    width: 290px;
   }
-  #contacts{
-      padding-top: 30px;
-      text-align: center;
+
+  #contacts {
+    padding-top: 30px;
+    text-align: center;
   }
-  .contact-btn{
-      margin: 50px auto;
-      width: 100%;
+
+  .contact-btn {
+    margin: 50px auto;
+    width: 100%;
   }
-  .contact-btn a{
+
+  .contact-btn a {
     font-size: 15px;
-}
-  #abt a{
+  }
+
+  #abt a {
     padding: 15px;
+    border: none;
   }
 
   .footer-container {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .contact-us, .social-media, .contact-form {
-      width: 100%;
-      margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .social-media ul {
-      justify-content: center;
-      margin: auto;
+    justify-content: center;
+    margin: auto;
   }
 
   .social-media li {
-      margin-right: 10px;
+    margin-right: 10px;
   }
-  .nav-btn{
-      display: flex;
-      flex-direction: column;
+
+  .nav-btn {
+    display: flex;
+    flex-direction: column;
   }
-  .intro #mobile-ctg{
-      margin-right:0px ;
-      padding: 12px;
+
+  .intro #mobile-ctg {
+    margin-right: 0px;
+    padding: 12px;
   }
-  .intro #abt{
-      margin-left: 0px;
-      padding: 15px;
-      background-color:#1d8c1d;
+
+  .intro #abt {
+    margin-left: 0px;
+    padding: 15px;
+    background-color: #1d8c1d;
   }
-  .intro #abt a{
-      color: white;
+
+  .intro #abt a {
+    color: white;
   }
-  .intro-text h1{
+
+  .intro-text h1 {
     font-size: 2.5rem;
   }
-  .intro-text p{
+
+  .intro-text p {
     font-size: 1rem;
   }
-  
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) { 
     body {
         overflow-x: hidden; 
+        background:none;
+    }
+    #lawas{
+      background:none;
+
     }
     .menu-container {
       width: 100%;
@@ -1209,9 +1277,6 @@ body::-webkit-scrollbar-thumb:hover {
         justify-content: center;
         align-items: center;   
     }
-    .missionvision{
-        width: 90%;
-    }
     .img-holder{
         display: none;
     }
@@ -1225,7 +1290,7 @@ body::-webkit-scrollbar-thumb:hover {
       display: inline-block;
       border-radius: 1000px;
       margin: auto;
-      margin-top: 3.5rem;
+      margin-top: 5rem;
       margin-bottom: 5rem;
       width: 450px;
       background-color: #44891c;
@@ -1238,18 +1303,20 @@ body::-webkit-scrollbar-thumb:hover {
     #abouts {
         grid-template-columns: 1fr;
         border-radius: 0;
-        height: 100vh;
+        height: auto;
       }
+      
       .abt-head {
         display: inline-block;
         border-radius: 1000px;
         margin: auto;
-        margin-top: 5rem;
-        width: 50%;
+        margin-top: 7rem;
+        width: 48%;
         background-color: #44891c;
       }
       .abt-head h1 {
         font-size: 2.3rem;
+        padding-top: 1.3rem;
         color: rgb(255, 255, 255);
         transition: 1 ease;
       }
@@ -1277,12 +1344,18 @@ body::-webkit-scrollbar-thumb:hover {
         background-color: #44891c;
       }
       .tm h3 {
-        font-size: 2.3rem;
+        font-size: 2rem;
         color: rgb(255, 255, 255);
         transition: 1 ease;
       }
     .team-member{
         width: 100%;
+    }
+    .team-member p{
+      font-size: 1rem;
+    }
+    .team-member h4{
+      font-size: 1rem;
     }
     .category-container {
         display: grid;

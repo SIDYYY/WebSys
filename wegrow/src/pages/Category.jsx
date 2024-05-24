@@ -33,8 +33,8 @@ function Category() {
   return (
     <div id="categ">
       <div className="ctg-head">
-        <div className="cat ">
-      <h1>Category || We-GROW</h1>
+        <div className="cat">
+      <h1 className='reveal disappear'>Category || We-GROW</h1>
       </div>
       </div>
       <div className="category-container reveal disappear">

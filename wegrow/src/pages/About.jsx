@@ -9,8 +9,8 @@ function About() {
       <div className="abt-holder ">
         
         <div className="hug">
-        <div className="abt-head">
-          <h1 >About || We-GROW</h1>
+        <div className="abt-head ">
+          <h1 className='reveal disappear' >About || We-GROW</h1>
         </div>
         <div className="abt-welcome reveal disappear">
           <h2>Welcome to We-GROW</h2>
