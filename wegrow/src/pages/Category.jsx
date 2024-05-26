@@ -37,6 +37,7 @@ function Category() {
       <h1 className='reveal disappear'>Category || We-GROW</h1>
       </div>
       </div>
+      <div className="ctg-container-holder">
       <div className="category-container reveal disappear">
         <div className="categories food reveal disappear">
           <h2>Food</h2>
@@ -62,6 +63,7 @@ function Category() {
           {/* Use Link to navigate to the drinks  */}
           <button className="ctg-button"><Link to="/drinks">MORE RECIPES</Link></button>
         </div>
+      </div>
       </div>
     </div>
   );

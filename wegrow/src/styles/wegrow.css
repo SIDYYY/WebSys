@@ -120,7 +120,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .disappear.gone {
-    transform: translateY(80px);
+    transform: translateY(-80px);
     opacity: 0;
 }
 
@@ -354,7 +354,7 @@ body::-webkit-scrollbar-thumb:hover {
   }
   
   .abt-head h1 {
-    color: rgb(120, 120, 120);
+    color: rgb(28, 28, 28);
     font-weight: bolder;
     font-size: 45px;
     padding-top: 2.5rem;
@@ -368,12 +368,12 @@ body::-webkit-scrollbar-thumb:hover {
     width: 90%;
     padding: 20px;
     height: auto;
-    background: #ffff;
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background: rgba( 68, 137, 28, 0.55 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5px );
+  -webkit-backdrop-filter: blur( 5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
   }
   .abt-welcome{
     margin-bottom: 0rem;
@@ -381,7 +381,7 @@ body::-webkit-scrollbar-thumb:hover {
   
   .abt-welcome h2, .abt-mission h2 {
     font-size: 37px;
-    color: #1d8c1d;
+    color: #ffffff;
   }
   .abt-mission h2{
     text-align: center;
@@ -391,6 +391,7 @@ body::-webkit-scrollbar-thumb:hover {
     margin-top: 2rem;
     font-size: 19px;
     font-weight: lighter;
+    color: whitesmoke;
   }
   
   .img-holder {
@@ -495,7 +496,15 @@ body::-webkit-scrollbar-thumb:hover {
   padding-bottom: 20px;
   display: inline-flex;
 }
-
+.ctg-container-holder{
+  padding: 30px 20px 0px 20px;
+  background: rgba( 68, 137, 28, 0.55 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5px );
+  -webkit-backdrop-filter: blur( 5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
 .category-container {
     display: grid;
     grid-template-columns: repeat(3, minmax(290px, 1fr));
@@ -652,7 +661,7 @@ body::-webkit-scrollbar-thumb:hover {
 .team-member {
     text-align: center; 
     max-width: 280px;
-    background: rgba( 255, 255, 255, 0.25 );
+    background: rgba( 255, 255, 255, 0.80 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
@@ -953,7 +962,7 @@ body::-webkit-scrollbar-thumb:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position:-300px;
+    background-position:-30ctg-container-holder0px;
   }
 
   .menu-container {
@@ -1035,6 +1044,9 @@ body::-webkit-scrollbar-thumb:hover {
     width: 100vw;
     border-radius: 0;
   }
+  .ctg-container-holder{
+    background: none;
+  }
 
   .cat {
     display: inline-block;
@@ -1090,7 +1102,7 @@ body::-webkit-scrollbar-thumb:hover {
   }
 
   .abt-welcome p, .abt-mission p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding-bottom: 1rem;
     text-align: center;
     width: 80%;
