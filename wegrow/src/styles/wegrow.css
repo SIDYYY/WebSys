@@ -258,7 +258,7 @@ body::-webkit-scrollbar-thumb:hover {
   margin: 0;
   padding: 0;
   background: radial-gradient(circle at -1% 57.5%, rgb(197, 219, 206) 0%, rgb(238, 255, 245) 90%);
-  background-image: url('../imgs/photo-1543353071-10c8ba85a904.avif');
+  background-image: url('../imgs/blob-scene-haikei (2).svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -272,12 +272,7 @@ body::-webkit-scrollbar-thumb:hover {
   max-width: 100vw;
   width: 100%;
   height: 100vh; /* Make the grid full height */
-  background: rgba( 255, 255, 255, 0.55 ); 
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
 }
 
 .intro-text {
@@ -342,8 +337,8 @@ body::-webkit-scrollbar-thumb:hover {
 
   .abt-head {
     border-bottom: 2px solid #44891c;
-    border-right: 2px solid #44891c;
-    border-bottom-right-radius: 50px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     display: inline-block;
     margin-top: 10rem;
     margin: auto;
@@ -356,7 +351,7 @@ body::-webkit-scrollbar-thumb:hover {
   .abt-head h1 {
     color: rgb(28, 28, 28);
     font-weight: bolder;
-    font-size: 45px;
+    font-size: 40px;
     padding-top: 2.5rem;
     padding-bottom: 20px;
     display: inline-flex;
@@ -380,7 +375,7 @@ body::-webkit-scrollbar-thumb:hover {
   }
   
   .abt-welcome h2, .abt-mission h2 {
-    font-size: 37px;
+    font-size: 30px;
     color: #ffffff;
   }
   .abt-mission h2{
@@ -389,7 +384,7 @@ body::-webkit-scrollbar-thumb:hover {
   
   .abt-welcome p, .abt-mission p {
     margin-top: 2rem;
-    font-size: 19px;
+    font-size: 18px;
     font-weight: lighter;
     color: whitesmoke;
   }
@@ -490,20 +485,21 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .cat h1 {
-  color: rgb(96, 96, 96);
+  color: rgb(37, 37, 37);
   font-weight: bolder;
   font-size: 45px;
   padding-bottom: 20px;
   display: inline-flex;
 }
 .ctg-container-holder{
-  padding: 30px 20px 0px 20px;
-  background: rgba( 68, 137, 28, 0.55 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  padding: 30px 20px 30px 20px;
+  background: rgba( 29, 140, 29, 0.80 );
   backdrop-filter: blur( 5px );
   -webkit-backdrop-filter: blur( 5px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: none;
+  border-bottom-right-radius: none;
 }
 .category-container {
     display: grid;
@@ -681,6 +677,8 @@ body::-webkit-scrollbar-thumb:hover {
 
 .team-member h4 {
     margin-top: 10px;
+    padding-bottom: 0.7rem;
+    border-bottom: 2px solid black;
     font-size: 19px;
     font-weight: bolder;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -691,6 +689,9 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 16px;
     font-weight: bolder;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.team-member p:nth-of-type(1){
+  padding-top: 0.7rem;
 }
 .category {
     padding: 20px;
@@ -713,13 +714,7 @@ body::-webkit-scrollbar-thumb:hover {
       background-size: cover;
       background-attachment: fixed;
     }
-    .main-content{
-      background: url('../imgs/jason-briscoe-n4ymhyyFY7A-unsplash.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-      background-position:-300px;
-    }
+
     .menu-container {
       flex-direction: column;
       align-items: flex-end;
@@ -808,6 +803,10 @@ body::-webkit-scrollbar-thumb:hover {
       font-size: 30.8px;
       color: rgb(255, 255, 255);
     }
+    .ctg-container-holder{
+      background: none;
+      backdrop-filter: none;
+    }
     #abouts {
         grid-template-columns: 1fr;
         height: auto;
@@ -875,6 +874,14 @@ body::-webkit-scrollbar-thumb:hover {
     .team-member{
         width: auto;
         height: auto;    
+    }
+    .team-member p{
+      font-size: 13.5px;
+      
+    }
+    .team-member h4{
+      font-size: 17.5px;
+      padding-bottom: 4px;
     }
     .category-container {
             display: flex; 
@@ -958,12 +965,10 @@ body::-webkit-scrollbar-thumb:hover {
     background-attachment: fixed;
   }
   .main-content{
-    background: url('../imgs/jason-briscoe-n4ymhyyFY7A-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position:-30ctg-container-holder0px;
+    
+    background-position: 60%;
   }
+
 
   .menu-container {
     flex-direction: column;
