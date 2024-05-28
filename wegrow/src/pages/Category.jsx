@@ -25,7 +25,7 @@ function Category() {
       setFoodIndex((prevIndex) => (prevIndex + 1) % foodImages.length);
       setDessertIndex((prevIndex) => (prevIndex + 1) % dessertImages.length);
       setDrinksIndex((prevIndex) => (prevIndex + 1) % drinksImages.length);
-    }, 1000);
+    }, 3000);
 
     return () => clearInterval(intervalId);
   }, []);
