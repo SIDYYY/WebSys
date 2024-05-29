@@ -337,12 +337,11 @@ body::-webkit-scrollbar-thumb:hover {
 
   .abt-head {
     border-bottom: 2px solid #44891c;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top: 2px solid #44891c;
     display: inline-block;
-    margin-top: 10rem;
+    margin-top: 7rem;
     margin: auto;
-    padding: 4rem auto;
+    padding: 0 auto;
     width: 80%;
     
     
@@ -352,7 +351,7 @@ body::-webkit-scrollbar-thumb:hover {
     color: rgb(28, 28, 28);
     font-weight: bolder;
     font-size: 40px;
-    padding-top: 2.5rem;
+    padding-top: 1.3rem;
     padding-bottom: 20px;
     display: inline-flex;
   }
@@ -363,7 +362,7 @@ body::-webkit-scrollbar-thumb:hover {
     width: 90%;
     padding: 20px;
     height: auto;
-    background: rgba( 68, 137, 28, 0.55 );
+    background: rgba( 68, 137, 28, 0.80 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 5px );
   -webkit-backdrop-filter: blur( 5px );
@@ -405,7 +404,7 @@ body::-webkit-scrollbar-thumb:hover {
     border: 2px solid rgb(50, 157, 50);
   }
   .img-holder img:hover{
-    transform: scale(1.2);
+    transform: scale(1.05);
   }
   .contact-btn a{
     padding: 10px;
@@ -1051,6 +1050,7 @@ body::-webkit-scrollbar-thumb:hover {
   }
   .ctg-container-holder{
     background: none;
+    backdrop-filter: none;
   }
 
   .cat {
@@ -1242,8 +1242,10 @@ body::-webkit-scrollbar-thumb:hover {
         background:none;
     }
     #lawas{
-      background:none;
-
+      background: url('../imgs/blob-scene-haikei (2).svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
     }
     .menu-container {
       width: 100%;
@@ -1299,7 +1301,7 @@ body::-webkit-scrollbar-thumb:hover {
     }
     
     #categ{
-        height: 100vh;
+        height: auto;
         width: 100dvw;
         border-radius: 0;
     }
@@ -1307,8 +1309,7 @@ body::-webkit-scrollbar-thumb:hover {
       display: inline-block;
       border-radius: 1000px;
       margin: auto;
-      margin-top: 5rem;
-      margin-bottom: 5rem;
+      margin-top: 7rem;
       width: 450px;
       background-color: #44891c;
     }
@@ -1375,11 +1376,17 @@ body::-webkit-scrollbar-thumb:hover {
       font-size: 1rem;
     }
     .category-container {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(280px, 1fr));
-        gap: 10px;
-        padding-top: 10px;
-        justify-content: center; 
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 2rem auto auto auto;
+      align-items: center;
+      text-align: center;
+    }
+    .ctg-container-holder{
+      backdrop-filter: none;
+      background: none;
     }
     .categories {
         width:290px ; 

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/wegrow.css'
-import Ana from '../imgs/b9c47ef70bff06613d397abfce02c6e7.jpg'
-import Carl from '../imgs/download (2).jpeg'
+import Ana from '../imgs/Ana.webp'
+import Carl from '../imgs/SIDY.webp'
 
 
 function Team() {

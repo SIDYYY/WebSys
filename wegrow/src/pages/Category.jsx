@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/wegrow.css'
-import food1 from '../imgs/263217-BakedSalmonInFoil-MFS-MFS-2X3-0269-03a69c31414f46c882dc7d9b8f46534c.jpg';
-import food2 from '../imgs/spinach-salad.jpg';
-import food3 from '../imgs/EatingWell-April-Avocado-Toast-Beauty-Angle-1x1-5dbdcb43cc6a43d588a620fdb9a42bf4.jpg';
-import dessert1 from '../imgs/Greek-Yogurt-Parfait-Recipe.jpg';
-import dessert2 from '../imgs/fruit-salad-98841227-5848619a5f9b5851e5f87d5c.jpg';
-import dessert3 from '../imgs/IMG_0075-banana-pudding.jpg';
-import drink1 from '../imgs/green-smoothie-8-1200-500x500.jpg';
-import drink2 from '../imgs/Triple-Berry-Smoothie-square-featured.jpg';
+import food1 from '../imgs/263217-BakedSalmonInFoil-MFS-MFS-2X3-0269-03a69c31414f46c882dc7d9b8f46534c.webp';
+import food2 from '../imgs/spinach-salad.webp';
+import food3 from '../imgs/EatingWell-April-Avocado-Toast-Beauty-Angle-1x1-5dbdcb43cc6a43d588a620fdb9a42bf4.webp';
+import dessert1 from '../imgs/Greek-Yogurt-Parfait-Recipe.webp';
+import dessert2 from '../imgs/fruit-salad-98841227-5848619a5f9b5851e5f87d5c.webp';
+import dessert3 from '../imgs/IMG_0075-banana-pudding.webp';
+import drink1 from '../imgs/green-smoothie-8-1200-500x500.webp';
+import drink2 from '../imgs/Triple-Berry-Smoothie-square-featured.webp';
 import drink3 from '../imgs/watermelon-coconut-agua-fresca-featured-pic-sq.webp';
 
 function Category() {
@@ -37,7 +37,7 @@ function Category() {
       <h1 className='reveal disappear'>Category || We-GROW</h1>
       </div>
       </div>
-      <div className="ctg-container-holder">
+      <div className="ctg-container-holder reveal disappear">
       <div className="category-container reveal disappear">
         <div className="categories food reveal disappear">
           <h2>Food</h2>

@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; 
+import { FaHome,  FaGlassCheers, FaIceCream } from 'react-icons/fa';
 import '../styles/food.css'; 
-import avocadoToastImage from '../imgs/EatingWell-April-Avocado-Toast-Beauty-Angle-1x1-5dbdcb43cc6a43d588a620fdb9a42bf4.jpg';
-import n2card from '../imgs/spinach-salad.jpg';
-import n3card from '../imgs/263217-BakedSalmonInFoil-MFS-MFS-2X3-0269-03a69c31414f46c882dc7d9b8f46534c.jpg';
+import avocadoToastImage from '../imgs/EatingWell-April-Avocado-Toast-Beauty-Angle-1x1-5dbdcb43cc6a43d588a620fdb9a42bf4.webp';
+import n2card from '../imgs/spinach-salad.webp';
+import n3card from '../imgs/263217-BakedSalmonInFoil-MFS-MFS-2X3-0269-03a69c31414f46c882dc7d9b8f46534c.webp';
 
 function Food() {
   const [isAvocadoToastOpen, setIsAvocadoToastOpen] = useState(false);
@@ -26,11 +27,11 @@ function Food() {
     <div className="holder">
     <section className="section__container category__container">
       <p className="section__subheader">WE GROW <span><i className="ri-leaf-fill"></i></span></p>
-      <h2 className="section__header">FOOD - Category</h2>
+      <h2 className="section__header">Food  Category</h2>
       <ul className="category__list">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/dessert">Dessert</Link></li>
-        <li><Link to="/drinks">Drink</Link></li>
+        <li><Link to="/"><FaHome className='li1'/>Home</Link></li>
+        <li><Link to="/dessert"><FaIceCream className='li2'/>Dessert</Link></li>
+        <li><Link to="/drinks"><FaGlassCheers className='li3'/>Drink</Link></li>
       </ul>
       <div className="card-holder">
         <div className="contain">

@@ -19,12 +19,17 @@
   padding: 0;
   margin: 1rem 0;
 }
+.li1, .li2, .li3{
+  margin-right: 3px;
+  color: #003c02;
+}
 
 .category__list li {
   display: inline-block;
   margin-right: 5px;
-  padding: 15px;
+  padding: 10px;
   border-bottom: 3px solid white;
+
 }
 
 .category__list li:last-child {
@@ -58,6 +63,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  height: auto;
 }
 
 .card {
@@ -91,10 +97,18 @@
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
   border-radius: 10px;
+  height: auto;
 }
 
 .card img:hover {
   border-color: #aaa; 
+}
+.show-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.2rem auto;
+  height: auto;
 }
 .show-content ol{
   text-align: start;
@@ -102,6 +116,7 @@
 .show-content ol li{
   font-weight: bolder;
   font-size: 13px;
+  line-height: 1.1rem;
 }
 .show-content h4{
   color: #45a049;
@@ -269,14 +284,12 @@
         text-align: center;
     }
     .category__list li{
-      padding: 7px;
-      border-right: 3px solid white;
-      border-left: 3px solid white;
-      border-bottom: none;
-      background-color: #4caf50;
+      padding: 10px;
+      gap: 10px;
     }
     .category__list  li a{
-      color: white;
+      color: rgb(0, 0, 0);
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     .category__list li:first-child a{
       color: black;
@@ -293,7 +306,7 @@
     }
 
     .card {
-        width: 200px; 
+        width: 250px; 
     }
     .description {
         font-size: 15px;
@@ -331,13 +344,17 @@
   }
 
   .card-holder {
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
-      gap: 15px;
-      margin: 3rem auto auto auto;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 10px;
+    margin: 5rem auto auto auto; 
+    align-items: center;
+    text-align: center;
   }
 
   .card {
-      max-width: 220px;
+      width: 250px;
   }
 
   .description {
@@ -356,10 +373,11 @@
     background-color: #45a049;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 5px;
     border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 0;
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s ease; 

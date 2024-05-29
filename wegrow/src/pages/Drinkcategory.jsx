@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import { FaHome, FaUtensils,  FaIceCream } from 'react-icons/fa';
 import { Link } from 'react-router-dom'; 
 import '../styles/food.css'; 
-import n1card from '../imgs/green-smoothie-8-1200-500x500.jpg';
+import n1card from '../imgs/green-smoothie-8-1200-500x500.webp';
 import n2card from '../imgs/watermelon-coconut-agua-fresca-featured-pic-sq.webp';
-import n3card from '../imgs/Triple-Berry-Smoothie-square-featured.jpg';
+import n3card from '../imgs/Triple-Berry-Smoothie-square-featured.webp';
 
 function Drink() {
   const [isn1cardOpen, setIsn1cardOpen] = useState(false);
@@ -26,11 +27,11 @@ function Drink() {
     <div className="holder">
     <section className="section__container category__container">
       <p className="section__subheader">WE GROW <span><i className="ri-leaf-fill"></i></span></p>
-      <h2 className="section__header">Drink - Category</h2>
+      <h2 className="section__header">Drink  Category</h2>
       <ul className="category__list">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/food">Food</Link></li>
-        <li><Link to="/dessert">Dessert</Link></li>
+        <li><Link to="/"><FaHome className='li1'/>Home</Link></li>
+        <li><Link to="/food"><FaUtensils className='li2'/>Food</Link></li>
+        <li><Link to="/dessert"><FaIceCream className='li3'/>Dessert</Link></li>
       </ul>
 
       <div className="card-holder">

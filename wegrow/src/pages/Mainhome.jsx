@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/wegrow.css'
-import image from '../imgs/jason-briscoe-n4ymhyyFY7A-unsplash.jpg';
+import image from '../imgs/jason-briscoe-n4ymhyyFY7A-unsplash.webp';
 
 function Home() {
   return (

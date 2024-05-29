@@ -1,5 +1,5 @@
 import React from 'react';
-import resizingimage from '../imgs/spinach-salad.jpg';
+import resizingimage from '../imgs/spinach-salad.webp';
 import '../styles/wegrow.css'
 
 function About() {

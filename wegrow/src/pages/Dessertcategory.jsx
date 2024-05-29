@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import { FaHome, FaUtensils, FaGlassCheers } from 'react-icons/fa';
 import { Link } from 'react-router-dom'; 
 import '../styles/food.css'; 
-import n1card from '../imgs/fruit-salad-98841227-5848619a5f9b5851e5f87d5c.jpg';
-import n2card from '../imgs/IMG_0075-banana-pudding.jpg';
-import n3card from '../imgs/Greek-Yogurt-Parfait-Recipe.jpg';
+import n1card from '../imgs/fruit-salad-98841227-5848619a5f9b5851e5f87d5c.webp';
+import n2card from '../imgs/IMG_0075-banana-pudding.webp';
+import n3card from '../imgs/Greek-Yogurt-Parfait-Recipe.webp';
 
 function Dessert() {
   const [isn1cardOpen, setIsn1cardOpen] = useState(false);
@@ -26,11 +27,11 @@ function Dessert() {
     <div className="holder">
     <section className="section__container category__container">
       <p className="section__subheader">WE GROW <span><i className="ri-leaf-fill"></i></span></p>
-      <h2 className="section__header">Dessert - Category</h2>
+      <h2 className="section__header">Dessert Category</h2>
       <ul className="category__list">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/food">Food</Link></li>
-        <li><Link to="/drinks">Drink</Link></li>
+        <li><Link to="/"><FaHome className='li1'/>Home</Link></li>
+        <li><Link to="/food"><FaUtensils className='li2'/>Food</Link></li>
+        <li><Link to="/drinks"><FaGlassCheers className='li3'/>Drink</Link></li>
       </ul>
       <div className="card-holder">
         <div className="contain">
