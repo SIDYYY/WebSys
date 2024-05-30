@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/wegrow.css'
-import Ana from '../imgs/Ana.webp'
+import Ana from '../imgs/May.webp'
 import Carl from '../imgs/SIDY.webp'
 
 
