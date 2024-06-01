@@ -5,11 +5,13 @@ import App from './App';
 import Food from './pages/Foodcategory';
 import Dessert  from './pages/Dessertcategory';
 import Drinks from './pages/Drinkcategory';
+import Top from './scroll'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
+  <Top/>
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/food" element={<Food />} />
