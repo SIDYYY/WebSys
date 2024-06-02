@@ -202,7 +202,8 @@
   position: sticky;
   top: 10px;
   left: 100%;
-  color: #888;
+  color: #000000;
+  z-index: 1;
 }
 
 .prep-time ,.cal-count {
