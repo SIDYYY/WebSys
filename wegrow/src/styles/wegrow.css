@@ -493,6 +493,8 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 45px;
   padding-bottom: 20px;
   display: inline-flex;
+  text-transform: uppercase;
+  
 }
 .ctg-container-holder{
   padding: 30px 20px 30px 20px;
@@ -642,7 +644,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .tm h3 {
-  color: rgb(85, 85, 85);
+  color: rgb(29, 29, 29);
   font-weight: bolder;
   font-size: 36.5px;
   padding-bottom: 20px;
@@ -877,7 +879,7 @@ body::-webkit-scrollbar-thumb:hover {
         gap: 20px;
     }
     .team-member{
-        width: auto;
+        width: 90%;
         height: auto;    
     }
     .team-member p{
@@ -1099,12 +1101,12 @@ body::-webkit-scrollbar-thumb:hover {
 
   .abt-welcome {
     margin: auto;
-    margin-top: 3rem;
+    margin-top: 5rem;
   }
   .abt-mission{
     margin: auto;
     margin-top: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 8rem;
   }
 
   .abt-welcome h2, .abt-mission h2 {
@@ -1152,7 +1154,7 @@ body::-webkit-scrollbar-thumb:hover {
   
 
   .team-member {
-    width: auto;
+    width: 90%;
     height: auto;
   }
   .team-member p{
@@ -1319,6 +1321,7 @@ body::-webkit-scrollbar-thumb:hover {
       margin-top: 7rem;
       width: 450px;
       background-color: #44891c;
+      text-align: center;
     }
     .cat h1 {
       font-size: 2.3rem;

@@ -34,7 +34,7 @@ function Category() {
     <div id="categ">
       <div className="ctg-head">
         <div className="cat">
-      <h1 className='reveal disappear'>Category || We-GROW</h1>
+      <h1 className='reveal disappear'>Category</h1>
       </div>
       </div>
       <div className="ctg-container-holder reveal disappear">
