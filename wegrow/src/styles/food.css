@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-:root {
-  --primary-color: #599267fa;
-  --primary-color-dark: #044620;
-  --text-dark: #0c0a09;
-  --text-light: #78716c;
-  --white: #ffffff;
-  --max-width: 1050px;  
-}
 
 * {
   padding: 0;
@@ -177,12 +169,13 @@
 }
 
 .recipe-content img {
-  width: 50%;
+  width: 45%;
   height: auto;
   border-radius: 100%;
   aspect-ratio: 1;
   display: block;
   margin: 0 auto; 
+  margin-bottom: 2rem;
 }
 .recipe-content li{
   font-size: 16px;

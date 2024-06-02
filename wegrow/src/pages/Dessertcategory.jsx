@@ -189,7 +189,6 @@ const DessertCategory = () => {
             <button className="close-btn" onClick={handleClose}><i className="fas fa-times"></i></button>
             <h3>{selectedRecipe.title}</h3>
             <img src={selectedRecipe.image} alt={selectedRecipe.title} />
-            <p className="description">{selectedRecipe.description}</p>
             <div className="prep-cal">
             <div className="prep-time">
               <FaClock /> <span>Prep time: {selectedRecipe.prepTime}</span>
