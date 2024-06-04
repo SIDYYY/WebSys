@@ -455,7 +455,7 @@ body::-webkit-scrollbar-thumb:hover {
   
 #categ {
     height: 100vh;
-    width: 100vw;
+    width: auto;
     margin: auto;
     display: flex; 
     flex-direction: column;
@@ -721,6 +721,9 @@ body::-webkit-scrollbar-thumb:hover {
       background-size: cover;
       background-attachment: fixed;
     }
+    .main-content{
+      height: 100svh;
+    }
 
     .menu-container {
       flex-direction: column;
@@ -801,13 +804,14 @@ body::-webkit-scrollbar-thumb:hover {
       display: inline-block;
       border-radius: 0px;
       margin: auto;
-      padding-top: 6rem;
-      max-width: 1200px;
+      padding-top: 8rem;
+      width: 1200px;
+      text-align: center;
       background-color: #44891c;
     }
   
     .cat h1 {
-      font-size: 30.8px;
+      font-size: 2rem;
       color: rgb(255, 255, 255);
     }
     .ctg-container-holder{
@@ -972,7 +976,7 @@ body::-webkit-scrollbar-thumb:hover {
     background-attachment: fixed;
   }
   .main-content{
-    
+    height: 100svh;
     background-position: 60%;
   }
 
