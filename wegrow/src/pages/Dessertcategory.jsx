@@ -186,6 +186,7 @@ const DessertCategory = () => {
       {selectedRecipe && (
         <div className="recipe-details">
           <div className="recipe-content">
+            
             <button className="close-btn" onClick={handleClose}><i className="fas fa-times"></i></button>
             <h3>{selectedRecipe.title}</h3>
             <img src={selectedRecipe.image} alt={selectedRecipe.title} />
@@ -197,6 +198,7 @@ const DessertCategory = () => {
             <FaFire /> <span> Calorie Count : {selectedRecipe.calories}</span>  
             </div>
             </div>
+            <div className="rep-hold">
             <h4>Ingredients</h4>
             <ol>
               {selectedRecipe.ingredients.map((ingredient, index) => (
@@ -209,6 +211,7 @@ const DessertCategory = () => {
                 <li key={index}>{step}</li>
               ))}
             </ol>
+            </div>
           </div>
         </div>
       )}

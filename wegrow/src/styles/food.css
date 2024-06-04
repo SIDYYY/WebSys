@@ -203,7 +203,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 15px;
   margin: auto;
   border-radius: 10px;
   color: #ffffff;
@@ -221,13 +221,27 @@
   align-items: center;
   text-align: center;
 }
-
+.rep-hold{
+  background-color: #1d8c1d;
+  width: 90%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+  padding: 30px;
+  border-radius: 30px;
+}
 
 .prep-time span {
   margin-left: 5px;
 }
+.recipe-content h4{
+  font-size: 24px;
+}
 
-.recipe-content h4 {
+.recipe-content h4:nth-of-type(2) {
   margin-top: 20px;
 }
 

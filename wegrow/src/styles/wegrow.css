@@ -364,12 +364,12 @@ body::-webkit-scrollbar-thumb:hover {
     width: 90%;
     padding: 20px;
     height: auto;
-    background: rgba( 68, 137, 28, 0.80 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 5px );
-  -webkit-backdrop-filter: blur( 5px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background: rgba( 68, 137, 28, 0.85 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
   }
   .abt-welcome{
     margin-bottom: 0rem;
@@ -385,7 +385,7 @@ body::-webkit-scrollbar-thumb:hover {
   
   .abt-welcome p, .abt-mission p {
     margin-top: 2rem;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: lighter;
     color: whitesmoke;
   }
@@ -1315,8 +1315,10 @@ body::-webkit-scrollbar-thumb:hover {
     
     #categ{
         height: auto;
+        min-height: 100%;
         width: 100dvw;
         border-radius: 0;
+        margin-bottom: 5rem;
     }
     .cat {
       display: inline-block;
@@ -1337,6 +1339,7 @@ body::-webkit-scrollbar-thumb:hover {
         border-radius: 0;
         height: auto;
       }
+
       
       .abt-head {
         display: inline-block;
