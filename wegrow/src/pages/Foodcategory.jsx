@@ -223,6 +223,7 @@ import n6card from '../imgs/grilled-chicken-with-mango-avocado-salsa-3-SQUARE.we
             <FaFire /> <span> Calorie Count : {selectedRecipe.calories}</span>  
             </div>
             </div>
+            <div className="rep-hold">
               <h4>Ingredients</h4>
               <ol>
                 {selectedRecipe.ingredients.map((ingredient, index) => (
@@ -235,6 +236,7 @@ import n6card from '../imgs/grilled-chicken-with-mango-avocado-salsa-3-SQUARE.we
                   <li key={index}>{step}</li>
                 ))}
               </ol>
+              </div>
             </div>
           </div>
         )}

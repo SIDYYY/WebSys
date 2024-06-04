@@ -200,6 +200,7 @@ const DrinkCategory = () => {
             <FaFire /> <span> Calorie Count : {selectedRecipe.calories}</span>  
             </div>
             </div>
+            <div className="rep-hold">
             <h4>Ingredients</h4>
             <ol>
               {selectedRecipe.ingredients.map((ingredient, index) => (
@@ -212,6 +213,7 @@ const DrinkCategory = () => {
                 <li key={index}>{step}</li>
               ))}
             </ol>
+            </div>
           </div>
         </div>
       )}
