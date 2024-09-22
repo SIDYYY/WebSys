@@ -16,14 +16,14 @@ function revealAndDisappear(){
         }
     }
 
-    for (var i = 0; i < disappears.length; i++) {
-        var disappearTop = disappears[i].getBoundingClientRect().top;
-        var disappearBottom = disappears[i].getBoundingClientRect().bottom;
+    for (var x = 0; x < disappears.length; x++) {
+        var disappearTop = disappears[x].getBoundingClientRect().top;
+        var disappearBottom = disappears[x].getBoundingClientRect().bottom;
 
         if (disappearTop > windowHeight || disappearBottom < 0) {
-            disappears[i].classList.add('gone');
+            disappears[x].classList.add('gone');
         } else {
-            disappears[i].classList.remove('gone');
+            disappears[x].classList.remove('gone');
         }
     }
 }

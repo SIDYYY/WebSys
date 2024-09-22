@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaFire, FaHome, FaUtensils, FaGlassCheers, FaClock } from 'react-icons/fa';
+import { FaFire, FaHome, FaUtensils, FaGlassCheers, FaClock, FaTimes } from 'react-icons/fa';
 import n1card from '../imgs/fruit-salad-98841227-5848619a5f9b5851e5f87d5c.webp';
 import n2card from '..//imgs/IMG_0075-banana-pudding.webp';
 import n3card from '../imgs/Greek-Yogurt-Parfait-Recipe.webp';
@@ -168,7 +168,7 @@ const DessertCategory = () => {
         <h2 className="section__header">Dessert Category</h2>
         <nav className='category__list-holder'>
         <ul className="category__list">
-          <li><Link to="/"><FaHome className='li1' />Home</Link></li>
+          <li><Link to="/bombeo-daguinotas"><FaHome className='li1' />Home</Link></li>
           <li><Link to="/food"><FaUtensils className='li2' />Food</Link></li>
           <li><Link to="/drinks"><FaGlassCheers className='li3' />Drink</Link></li>
         </ul>
@@ -187,7 +187,7 @@ const DessertCategory = () => {
         <div className="recipe-details">
           <div className="recipe-content">
             
-            <button className="close-btn" onClick={handleClose}><i className="fas fa-times"></i></button>
+            <button className="close-btn" onClick={handleClose}><FaTimes/></button>
             <h3>{selectedRecipe.title}</h3>
             <img src={selectedRecipe.image} alt={selectedRecipe.title} />
             <div className="prep-cal">

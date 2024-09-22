@@ -157,6 +157,8 @@ body::-webkit-scrollbar-thumb:hover {
   .menu-logo {
     line-height: 0;
     margin: 0;
+    width: auto;
+    height: auto; 
 }
 
   .menu-logo img {
@@ -166,6 +168,7 @@ body::-webkit-scrollbar-thumb:hover {
         box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.5);
         border: none;
         width: 50px; 
+        height: auto;
         border-radius: 50%;
         margin-left: 20px;
     }
@@ -302,6 +305,7 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: auto;
   height: 100%; /* Make the image container full height */
   z-index: 999;
   margin-right:80px;
@@ -309,6 +313,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .intro-image img {
   width:100%;
+  height: auto;
   border-radius: 100%;
   height: auto;
   object-fit: cover;
@@ -408,25 +413,22 @@ body::-webkit-scrollbar-thumb:hover {
   .img-holder img:hover{
     transform: scale(1.05);
   }
-  .contact-btn a{
-    padding: 10px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    border: 1px solid white;
-    border-radius: 50px;
-    font-weight: bolder;
-    text-align: center;
-    margin: auto;
-    font-size: 18px;
-}
-#abt a{
-    padding: 15px;
+  #abt a {
+    padding: 15px 25px; /* Adjusted padding for better spacing */
     border-radius: 30px;
     background-color: #1d8c1d;
     color: white;
+    text-decoration: none;
+    font-weight: bold; /* Changed from 'bolder' to 'bold' for clarity */
+    font-size: 18px;
 }
-.contact-btn{
-    flex-direction: row;
+
+#abt a:hover {
+    background-color: #145e14; /* Darker green on hover */
+}
+
+.contact-btn {
+    display: inline-block; /* Changed from 'flex-direction' to 'display: inline-block' for simpler layout */
     text-decoration: none;
     border: none;
     margin: 50px 10px;
@@ -434,6 +436,7 @@ body::-webkit-scrollbar-thumb:hover {
     text-align: center;
     background-color: transparent;
 }
+
 
 
   .footer {
@@ -448,7 +451,7 @@ body::-webkit-scrollbar-thumb:hover {
   #quote {
     text-align: center;
     font-family: Arial;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-style: italic;
     color: rgb(73, 73, 73);
   }
@@ -680,6 +683,7 @@ body::-webkit-scrollbar-thumb:hover {
     height: auto; 
     max-height: 200px; 
     border-radius: 50%; 
+    aspect-ratio: 1;
 }
 
 .team-member h4 {
@@ -1009,7 +1013,7 @@ body::-webkit-scrollbar-thumb:hover {
     right: -380px;
     top: 0;
     margin: -20px;
-    padding: 75px 50px 20px;
+    padding: 75px 45px 18px;
     background: rgba(15, 82, 15, 0.45);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(4px);

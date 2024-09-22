@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; 
-import { FaFire, FaHome,  FaClock,FaGlassCheers, FaIceCream } from 'react-icons/fa';
+import { FaFire, FaHome,  FaClock,FaGlassCheers, FaIceCream, FaTimes } from 'react-icons/fa';
 import '../styles/food.css'; 
 import n1card from '../imgs/EatingWell-April-Avocado-Toast-Beauty-Angle-1x1-5dbdcb43cc6a43d588a620fdb9a42bf4.webp';
 import n2card from '../imgs/spinach-salad.webp';
@@ -194,7 +194,7 @@ import n6card from '../imgs/grilled-chicken-with-mango-avocado-salsa-3-SQUARE.we
           <h2 className="section__header">Food Category</h2>
           <nav className='category__list-holder'>
           <ul className="category__list">
-            <li><Link to="/"><FaHome className='li1' />Home</Link></li>
+            <li><Link to="/bombeo-daguinotas"><FaHome className='li1' />Home</Link></li>
             <li><Link to="/dessert"><FaIceCream className='li2' />Dessert</Link></li>
             <li><Link to="/drinks"><FaGlassCheers className='li3' />Drink</Link></li>
           </ul>
@@ -212,7 +212,7 @@ import n6card from '../imgs/grilled-chicken-with-mango-avocado-salsa-3-SQUARE.we
         {selectedRecipe && (
           <div className="recipe-details">
             <div className="recipe-content">
-              <button className="close-btn" onClick={handleClose}><i className="fas fa-times"></i></button>
+              <button className="close-btn" onClick={handleClose}><FaTimes/></button>
               <h3>{selectedRecipe.title}</h3>
               <img src={selectedRecipe.image} alt={selectedRecipe.title} />
               <div className="prep-cal">

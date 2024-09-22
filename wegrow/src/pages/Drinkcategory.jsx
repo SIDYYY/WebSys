@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaFire, FaHome, FaUtensils, FaIceCream, FaClock } from 'react-icons/fa';
+import { FaFire, FaHome, FaUtensils, FaIceCream, FaClock,FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom'; 
 import '../styles/food.css'; 
 import n1card from '../imgs/green-smoothie-8-1200-500x500.webp';
@@ -171,7 +171,7 @@ const DrinkCategory = () => {
         <h2 className="section__header">Drink Category</h2>
         <nav className='category__list-holder'>
         <ul className="category__list">
-          <li><Link to="/"><FaHome className='li1' />Home</Link></li>
+          <li><Link to="/bombeo-daguinotas"><FaHome className='li1' />Home</Link></li>
           <li><Link to="/food"><FaUtensils className='li2' />Food</Link></li>
           <li><Link to="/dessert"><FaIceCream className='li3' />Dessert</Link></li>
         </ul>
@@ -189,7 +189,7 @@ const DrinkCategory = () => {
       {selectedRecipe && (
         <div className="recipe-details">
           <div className="recipe-content">
-            <button className="close-btn" onClick={handleClose}><i className="fas fa-times"></i></button>
+            <button className="close-btn" onClick={handleClose}><FaTimes/></button>
             <h3>{selectedRecipe.title}</h3>
             <img src={selectedRecipe.image} alt={selectedRecipe.title} />
             <div className="prep-cal">
