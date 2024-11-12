@@ -5,7 +5,6 @@ import Home from './pages/Mainhome';
 import Category from './pages/Category';
 import Qoutes from './pages/Qoutes';
 import About from './pages/About';
-import Team from './pages/Team';
 import Contact from './pages/Contact';
 import './script';
 
@@ -24,5 +23,3 @@ function App() {
 }
 
 export default App;
-
-

@@ -15,6 +15,7 @@ root.render(
       <Top />
       <Routes>
         <Route path="/bombeo-daguinotas" element={<App />} /> 
+        <Route path="/" element={<App />} /> 
         <Route path="/food" element={<Food />} />
         <Route path="/dessert" element={<Dessert />} />
         <Route path="/drinks" element={<Drinks />} />
