@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import '../styles/wegrow.css'
 
 
@@ -15,21 +16,12 @@ function Contact() {
           <div className="social-media">
             <h3 className="sm">Follow Us</h3>
             <ul>
-              <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-              <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-              <li><a href="#"><i className="fab fa-instagram"></i></a></li>
-              <li><a href="#"><i className="fab fa-linkedin"></i></a></li>
+              <li><a href="https://www.facebook.com/" aria-label="Facebook"><FaFacebookF /></a></li>
+              <li><a href="https://www.twitter.com/" aria-label="Twitter"><FaTwitter /></a></li>
+              <li><a href="https://www.instagram.com/" aria-label="Instagram"><FaInstagram /></a></li>
+              <li><a href="https://www.linkedin.com/" aria-label="LinkedIn"><FaLinkedinIn /></a></li>
             </ul>
           </div>
-          {/*<div className="contact-form">
-            <h3 className="contact-form-header">Send Us a Message</h3>
-            <form>
-              <input type="text" placeholder="Your Name" required />
-              <input type="email" placeholder="Your Email" required />
-              <textarea placeholder="Your Message" rows="4" required></textarea>
-              <button type="submit">Send</button>
-            </form>
-          </div>*/}
         </div>
       </footer>
   );

@@ -12,7 +12,7 @@ function Home() {
 		  <button class="contact-btn" id='abt'><a href="#abouts"> Know more 'ABOUT US'	</a></button>
         </div>
         <div className="intro-image reveal disappear">
-          <img src={image} alt="Healthy food" />
+          <img src={image} alt="Healthy food"  loading="eager"/>
         </div>
 		
       </div>

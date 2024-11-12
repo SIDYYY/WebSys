@@ -3,7 +3,7 @@ import './styles/food.css';
 import Header from './pages/Header';
 import Home from './pages/Mainhome';
 import Category from './pages/Category';
-import Qoutes from './pages/Qoutes'
+import Qoutes from './pages/Qoutes';
 import About from './pages/About';
 import Team from './pages/Team';
 import Contact from './pages/Contact';
@@ -16,7 +16,7 @@ function App() {
       <Home />
       <Qoutes />
       <About />
-      <Category/>
+      <Category />
       <Team />
       <Contact />
     </>
@@ -24,4 +24,5 @@ function App() {
 }
 
 export default App;
+
 

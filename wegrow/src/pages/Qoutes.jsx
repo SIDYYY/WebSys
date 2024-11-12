@@ -24,7 +24,7 @@ function Quotes() {
   return (
     <div className="footer">
       <div id="quote">
-        <h4>{quotes[currentQuoteIndex]}</h4>
+        <p>{quotes[currentQuoteIndex]}</p>
       </div>
     </div>
   );

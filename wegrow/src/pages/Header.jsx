@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import projectLogo from '../imgs/favicon.ico';
+import { FaEnvelope,  FaList,FaInfoCircle, FaHome} from 'react-icons/fa';
 import '../styles/wegrow.css'
 
 function Header() {
@@ -45,10 +46,10 @@ function Header() {
       <span></span>
       <div className="menu">
         <ul>
-          <li><a href="#main-content"><i className="fas fa-home"></i> Home</a></li>
-          <li><a href="#abouts"><i className="fas fa-info-circle"></i> About Us</a></li>
-          <li><a href="#categ"><i className="fas fa-book-open"></i> Category</a></li>
-          <li><a href="#contact"><i className="fas fa-envelope"></i> Contact</a></li>
+          <li><a href="#main-content"><FaHome/> Home</a></li>
+          <li><a href="#abouts"><FaInfoCircle/> About Us</a></li>
+          <li><a href="#categ"><FaList/> Category</a></li>
+          <li><a href="#contact"><FaEnvelope/> Contact</a></li>
         </ul>
       </div>
     </nav>
